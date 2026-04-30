@@ -2,18 +2,5 @@
   command   = "npm run build"
   publish   = ".next"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-
 [build.environment]
   NEXT_TELEMETRY_DISABLED = "1"
-
-# Environment variables — set real values in Netlify dashboard under
-# Site → Configuration → Environment Variables
-# (Never put real secrets in this file — it is committed to Git)
-# AIRTABLE_API_KEY          = ""
-# AIRTABLE_BASE_ID          = ""
-# AIRTABLE_BRANDS_TABLE     = "Brands"
-# AIRTABLE_CONSUMERS_TABLE  = "Consumers"
-# RESEND_API_KEY             = ""
-# NOTIFICATION_EMAIL         = "amobeydeborah2000@gmail.com"

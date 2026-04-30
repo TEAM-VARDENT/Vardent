@@ -210,17 +210,7 @@ export default function EarlyAccess() {
                 </p>
               )}
 
-              <form
-                id="bform"
-                name="brands"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                onSubmit={handleBrand}
-              >
-                <input type="hidden" name="form-name" value="brands" />
-                <p className="hidden">
-                  <label>Do not fill: <input name="bot-field" /></label>
-                </p>
+              <form id="bform" onSubmit={handleBrand}>
 
                 <Field label={bf.fields.company.label} name="company" placeholder={bf.fields.company.placeholder} />
                 <Field label={bf.fields.name.label}    name="name"    placeholder={bf.fields.name.placeholder} />
@@ -255,15 +245,8 @@ export default function EarlyAccess() {
 
               <form
                 id="cform"
-                name="consumers"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
                 onSubmit={handleConsumer}
               >
-                <input type="hidden" name="form-name" value="consumers" />
-                <p className="hidden">
-                  <label>Do not fill: <input name="bot-field" /></label>
-                </p>
 
                 <Field label={cf.fields.name.label}    name="name"    placeholder={cf.fields.name.placeholder}    dark />
                 <Field label={cf.fields.email.label}   name="email"   type="email" placeholder={cf.fields.email.placeholder}   dark />

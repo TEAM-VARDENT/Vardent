@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Environment — NEVER commit real secrets
+.env.local
+.env.*.local
+
+# Netlify
+.netlify/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Source / scratch files — not part of the codebase
+vardent-v4.html
+ChatGPT Image*
+
+# Claude Code internal folder
+.claude/
+
+# Editor
+.vscode/settings.json
+*.swp

@@ -1,0 +1,54 @@
+import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
+import { Inter, JetBrains_Mono } from 'next/font/google';
+import './globals.css';
+import { site } from '@/content/site';
+import RevealInit from '@/components/RevealInit';
+
+const inter = Inter({
+  subsets:  ['latin'],
+  weight:   ['400', '500', '600', '700', '800'],
+  variable: '--font-inter',
+  display:  'swap',
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets:  ['latin'],
+  weight:   ['400', '500'],
+  variable: '--font-mono',
+  display:  'swap',
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://vardent.co'),
+  title:       site.seo.title,
+  description: site.seo.description,
+  openGraph: {
+    title:       site.seo.ogTitle,
+    description: site.seo.ogDescription,
+    url:         site.seo.ogUrl,
+    images:      [{ url: site.seo.ogImage }],
+    type:        'website',
+  },
+  icons: {
+    icon: '/logo.png',
+  },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  return (
+    <html
+      lang="en"
+      className={`${inter.variable} ${jetbrainsMono.variable}`}
+    >
+      <body>
+        <RevealInit />
+        {children}
+      </body>
+    </html>
+  );
+}

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { esc, isValidEmail, brandEmailHtml } from '@/lib/email';
 
 interface BrandPayload {
   company:  string;
@@ -9,19 +10,6 @@ interface BrandPayload {
 }
 
 const MAX = { company: 200, name: 100, email: 254, category: 100, country: 100 };
-
-function esc(str: string): string {
-  return str
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
-}
-
-function isValidEmail(email: string): boolean {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
 
 export async function POST(request: NextRequest) {
   let body: Partial<BrandPayload> = {};
@@ -38,7 +26,6 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Missing required fields.' }, { status: 400 });
   }
 
-  // Length limits — reject oversized payloads
   if (
     company.length  > MAX.company  ||
     name.length     > MAX.name     ||
@@ -65,24 +52,22 @@ export async function POST(request: NextRequest) {
       const Airtable = (await import('airtable')).default;
       const airtable = new Airtable({ apiKey: atKey });
       const base     = airtable.base(atBase);
-      await base(atTable).create([
-        {
-          fields: {
-            Company:        company,
-            Name:           name,
-            Email:          email,
-            Category:       category ?? '',
-            Country:        country,
-            'Submitted At': submittedAt,
-          },
+      await base(atTable).create([{
+        fields: {
+          Company:        company,
+          Name:           name,
+          Email:          email,
+          Category:       category ?? '',
+          Country:        country,
+          'Submitted At': submittedAt,
         },
-      ]);
+      }]);
     } catch (err) {
       console.error('[submit-brand] Airtable error:', err);
     }
   }
 
-  // ── Email notification (all user values HTML-escaped) ────────
+  // ── Email notification ───────────────────────────────────────
   if (process.env.RESEND_API_KEY) {
     try {
       const { Resend } = await import('resend');
@@ -92,20 +77,8 @@ export async function POST(request: NextRequest) {
       await resend.emails.send({
         from:    'VARDENT <onboarding@resend.dev>',
         to,
-        subject: `New Brand Registration — VARDENT`,
-        html: `
-          <div style="font-family:sans-serif;max-width:520px">
-            <h2 style="color:#0F5E3D">New Brand Interest Registered</h2>
-            <table style="width:100%;border-collapse:collapse">
-              <tr><td style="padding:8px 0;color:#5A6474;width:140px">Company</td><td style="padding:8px 0;font-weight:600">${esc(company)}</td></tr>
-              <tr><td style="padding:8px 0;color:#5A6474">Name</td><td style="padding:8px 0">${esc(name)}</td></tr>
-              <tr><td style="padding:8px 0;color:#5A6474">Email</td><td style="padding:8px 0"><a href="mailto:${esc(email)}">${esc(email)}</a></td></tr>
-              <tr><td style="padding:8px 0;color:#5A6474">Category</td><td style="padding:8px 0">${esc(category ?? '—')}</td></tr>
-              <tr><td style="padding:8px 0;color:#5A6474">Country</td><td style="padding:8px 0">${esc(country)}</td></tr>
-              <tr><td style="padding:8px 0;color:#5A6474">Submitted</td><td style="padding:8px 0">${new Date(submittedAt).toLocaleString('en-GB', { dateStyle: 'long', timeStyle: 'short' })}</td></tr>
-            </table>
-          </div>
-        `,
+        subject: `New Brand Registration — ${esc(company)} · VARDENT`,
+        html:    brandEmailHtml({ company, name, email, category: category ?? '', country, submittedAt }),
       });
     } catch (err) {
       console.error('[submit-brand] Resend error:', err);

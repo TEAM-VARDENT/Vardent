@@ -87,18 +87,18 @@ export const site = {
     headlineItalicLine: 'Infrastructure.',
     paragraphs: [
       'VARDENT is not an eco-shop. It is not a badge.',
-      'It is a new trust layer for sustainable commerce — built to help consumers make <strong>more confident choices</strong> and help honest brands stand out.',
-      'When sustainability claims are difficult to verify, everyone loses — except the brands making empty promises. VARDENT exists to change that.',
+      'It is a new trust layer for sustainable commerce, built to help consumers make <strong>more confident choices</strong> and help honest brands stand out.',
+      'When sustainability claims are difficult to verify, everyone loses. Except the brands making empty promises. VARDENT exists to change that.',
     ],
     cards: [
       {
         title: 'Independent Standards',
-        body:  'Every claim assessed against a defined standard — not self-reported, not approximate. Evidence is the only currency.',
+        body:  'Every claim assessed against a defined standard. Not self-reported, not approximate. Evidence is the only currency.',
         icon:  'star' as const,
       },
       {
         title: 'Transparent Trust',
-        body:  'Results that are readable, open to scrutiny, and accessible. Credibility requires visibility — nothing is hidden.',
+        body:  'Results that are readable, open to scrutiny, and accessible. Credibility requires visibility. Nothing is hidden.',
         icon:  'check' as const,
       },
       {
@@ -130,7 +130,7 @@ export const site = {
       {
         number: '03',
         title:  'Markets Need Better Signals',
-        body:   'Regulators, investors, and consumers are demanding greater accountability. The infrastructure to deliver it has not existed — until now.',
+        body:   'Regulators, investors, and consumers are demanding greater accountability. The infrastructure to deliver it has not existed. Until now.',
       },
     ],
   },
@@ -204,11 +204,11 @@ export const site = {
       },
       {
         question: 'Does VARDENT sell products?',
-        answer:   'No. VARDENT is not a retail platform. Our focus is the trust infrastructure — the layer that makes sustainability claims credible and verifiable. We are not a marketplace; we are what makes marketplaces trustworthy.',
+        answer:   'No. VARDENT is not a retail platform. Our focus is the trust infrastructure: the layer that makes sustainability claims credible and verifiable. We are not a marketplace; we are what makes marketplaces trustworthy.',
       },
       {
         question: 'How is VARDENT different?',
-        answer:   "Our focus is on bringing greater trust, clarity, and transparency to sustainability claims. We are building infrastructure designed for the rigour and accountability that today’s market — and today’s regulations — demand.",
+        answer:   "Our focus is on bringing greater trust, clarity, and transparency to sustainability claims. We are building infrastructure designed for the rigour and accountability that today’s market and today’s regulations demand.",
       },
       {
         question: 'When will VARDENT launch?',
@@ -224,7 +224,7 @@ export const site = {
       },
       {
         question: 'Is VARDENT only for large brands?',
-        answer:   'No. VARDENT is designed for brands of genuine commitment, not just brands of a certain size. If your sustainability effort is real, VARDENT is being built to reflect that — regardless of scale.',
+        answer:   'No. VARDENT is designed for brands of genuine commitment, not just brands of a certain size. If your sustainability effort is real, VARDENT is being built to reflect that, regardless of scale.',
       },
     ],
   },

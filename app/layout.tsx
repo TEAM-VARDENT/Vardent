@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   description: 'Every product independently audited. Every claim blockchain-anchored.',
   verification: {
     google:  content= "ZXsVjgvFRDLw_5KUoBFkO5WpXJLS2qGIIcNfmX8SdYs",
+   content="ZXsVjgvFRDLw_5KUoBFkO5WpXJLS2qGIIcNfmX8SdYs" />
   }
 
   openGraph: {

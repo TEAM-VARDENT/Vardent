@@ -23,10 +23,8 @@ export const metadata: Metadata = {
   title: 'Vardent — Verified Sustainable Commerce',
   description: 'Every product independently audited. Every claim blockchain-anchored.',
   verification: {
-    google:  content= "ZXsVjgvFRDLw_5KUoBFkO5WpXJLS2qGIIcNfmX8SdYs",
-   content="ZXsVjgvFRDLw_5KUoBFkO5WpXJLS2qGIIcNfmX8SdYs" />
-  }
-
+    google: 'ZXsVjgvFRDLw_5KUoBFkO5WpXJLS2qGIIcNfmX8SdYs',
+  },
   openGraph: {
     title:       site.seo.ogTitle,
     description: site.seo.ogDescription,

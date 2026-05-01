@@ -21,8 +21,13 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://vardent.co'),
-  title:       site.seo.title,
-  description: site.seo.description,
+  title:       Vardent — Verified Sustainable Commerce,
+  description: Every product independently audited. Every claim blockchain-anchored.,
+  verification: {
+    google: '"ZXsVjgvFRDLw_5KUoBFkO5WpXJLS2qGIIcNfmX8SdYs" />',
+  },
+}
+
   openGraph: {
     title:       site.seo.ogTitle,
     description: site.seo.ogDescription,

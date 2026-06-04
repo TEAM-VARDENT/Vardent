@@ -25,6 +25,7 @@ export const site = {
     links: [
       { label: 'What We Do',    href: '#what' },
       { label: 'Why It Matters', href: '#why'  },
+      { href: '/services', label: 'Services' },
       { label: 'FAQ',            href: '#faq'  },
     ],
     cta: { label: 'Join Waitlist', href: '#access' },

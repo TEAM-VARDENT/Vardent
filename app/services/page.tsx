@@ -2,14 +2,14 @@ import React from 'react'
 
 export default function ServicesPage() {
   return (
-    <div style={{minHeight: '100vh', backgroundColor: '#FFFFFF', color: '#2D2D2D', padding: '64px 24px'}}>
+    <div style={{minHeight: '100vh', backgroundColor: '#FFFFFF', color: '#0A0A0A ', padding: '64px 24px'}}>
       <div style={{maxWidth: '768px', margin: '0 auto'}}>
 
         <h1 style={{fontSize: '2.25rem', fontWeight: 'bold', color: '#194429', marginBottom: '16px'}}>
           Verification Services
         </h1>
         <p style={{fontSize: '1.125rem', color: '#9CA3AF', marginBottom: '64px'}}>
-          IIndependent sustainability verification, available now, before the platform launches.
+          Independent sustainability verification, available now, before the platform launches.
         </p>
 
         <div style={{marginBottom: '64px', borderLeft: '4px solid #194429', paddingLeft: '24px'}}>

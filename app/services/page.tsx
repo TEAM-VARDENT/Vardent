@@ -9,7 +9,7 @@ export default function ServicesPage() {
           Verification Services
         </h1>
         <p style={{fontSize: '1.125rem', color: '#9CA3AF', marginBottom: '64px'}}>
-          Independent sustainability verification — available now, before the platform launches.
+          IIndependent sustainability verification, available now, before the platform launches.
         </p>
 
         <div style={{marginBottom: '64px', borderLeft: '4px solid #194429', paddingLeft: '24px'}}>
@@ -20,7 +20,7 @@ export default function ServicesPage() {
             Sustainability Claim Assessment
           </p>
           <p style={{color: '#9CA3AF', marginBottom: '16px', lineHeight: '1.6'}}>
-            Most sustainability claims have never been independently checked. We assess one product against the Vardent five-dimension framework and deliver a structured written report — what evidence exists, what is missing, and whether your claim would survive regulatory scrutiny.
+            Most sustainability claims have never been independently checked. We assess one product against the Vardent five-dimension framework and deliver a structured written report, what evidence exists, what is missing, and whether your claim would survive regulatory scrutiny.
           </p>
           <p style={{color: '#9CA3AF', marginBottom: '24px'}}>
             <strong style={{color: '#FAF8F5'}}>Who this is for:</strong> Sustainable brands preparing for EU Green Claims Directive compliance.
@@ -72,11 +72,11 @@ export default function ServicesPage() {
             <strong style={{color: '#FAF8F5'}}>Who this is for:</strong> Ghanaian exporters and EU buyers sourcing from Ghana.
           </p>
           <a href="https://calendly.com/amobeydeborah2000/30min" target="_blank" rel="noreferrer"
-            style={{display: 'inline-block', backgroundColor: '#5AAF4B', color: 'white', fontWeight: '600', padding: '12px 24px', borderRadius: '6px', marginRight: '16px', marginBottom: '16px', textDecoration: 'none'}}>
+            style={{display: 'inline-block', backgroundColor: '#194429', color: 'white', fontWeight: '600', padding: '12px 24px', borderRadius: '6px', marginRight: '16px', marginBottom: '16px', textDecoration: 'none'}}>
             Book a free 20-minute call
           </a>
           <a href="https://tally.so/r/5BMNdM" target="_blank" rel="noreferrer"
-            style={{display: 'inline-block', border: '1px solid #5AAF4B', color: '#5AAF4B', fontWeight: '600', padding: '12px 24px', borderRadius: '6px', marginBottom: '16px', textDecoration: 'none'}}>
+            style={{display: 'inline-block', border: '1px solid #194429', color: '#194429', fontWeight: '600', padding: '12px 24px', borderRadius: '6px', marginBottom: '16px', textDecoration: 'none'}}>
             Tell us about your EUDR challenge
           </a>
         </div>

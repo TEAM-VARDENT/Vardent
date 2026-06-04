@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ServicesPage() {
   return (
-    <div style={{minHeight: '100vh', backgroundColor: '#080C1C', color: '#FAF8F5', padding: '64px 24px'}}>
+    <div style={{minHeight: '100vh', backgroundColor: '#FFFFFF', color: '#2D2D2D', padding: '64px 24px'}}>
       <div style={{maxWidth: '768px', margin: '0 auto'}}>
 
         <h1 style={{fontSize: '2.25rem', fontWeight: 'bold', color: '#5AAF4B', marginBottom: '16px'}}>
@@ -89,10 +89,7 @@ export default function ServicesPage() {
             style={{display: 'inline-block', backgroundColor: '#C89420', color: 'white', fontWeight: '600', padding: '16px 32px', borderRadius: '6px', fontSize: '1.125rem', textDecoration: 'none'}}>
             Book now
           </a>
-          <p style={{color: '#6B7280', fontSize: '0.875rem', marginTop: '32px'}}>
-            Debora Anyawenna Amobey · Founder, Vardent<br />
-            deborahamobey@vardent.co · +233534267849 · Accra, Ghana
-          </p>
+      
         </div>
 
       </div>

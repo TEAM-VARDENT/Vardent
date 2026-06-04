@@ -1,3 +1,5 @@
+import React from 'react'
+
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-[#080C1C] text-[#FAF8F5] px-6 py-16 max-w-4xl mx-auto">
@@ -26,6 +28,7 @@ export default function ServicesPage() {
         
           href="https://calendly.com/amobeydeborah2000/30min"
           target="_blank"
+          rel="noreferrer"
           className="inline-block bg-[#5AAF4B] text-white font-semibold px-6 py-3 rounded mr-4 mb-4"
         >
           Book a free 20-minute call
@@ -33,6 +36,7 @@ export default function ServicesPage() {
         
           href="https://tally.so/r/5BMNdM"
           target="_blank"
+          rel="noreferrer"
           className="inline-block border border-[#5AAF4B] text-[#5AAF4B] font-semibold px-6 py-3 rounded mb-4"
         >
           Tell us about your claim
@@ -56,6 +60,7 @@ export default function ServicesPage() {
         
           href="https://calendly.com/amobeydeborah2000/30min"
           target="_blank"
+          rel="noreferrer"
           className="inline-block bg-[#5AAF4B] text-white font-semibold px-6 py-3 rounded mr-4 mb-4"
         >
           Book a free 20-minute call
@@ -63,6 +68,7 @@ export default function ServicesPage() {
         
           href="https://tally.so/r/5BMNdM"
           target="_blank"
+          rel="noreferrer"
           className="inline-block border border-[#5AAF4B] text-[#5AAF4B] font-semibold px-6 py-3 rounded mb-4"
         >
           Tell us about your supply chain
@@ -86,6 +92,7 @@ export default function ServicesPage() {
         
           href="https://calendly.com/amobeydeborah2000/30min"
           target="_blank"
+          rel="noreferrer"
           className="inline-block bg-[#5AAF4B] text-white font-semibold px-6 py-3 rounded mr-4 mb-4"
         >
           Book a free 20-minute call
@@ -93,6 +100,7 @@ export default function ServicesPage() {
         
           href="https://tally.so/r/5BMNdM"
           target="_blank"
+          rel="noreferrer"
           className="inline-block border border-[#5AAF4B] text-[#5AAF4B] font-semibold px-6 py-3 rounded mb-4"
         >
           Tell us about your EUDR challenge
@@ -107,6 +115,7 @@ export default function ServicesPage() {
         
           href="https://calendly.com/amobeydeborah2000/30min"
           target="_blank"
+          rel="noreferrer"
           className="inline-block bg-[#C89420] text-white font-semibold px-8 py-4 rounded text-lg"
         >
           Book now
@@ -118,5 +127,5 @@ export default function ServicesPage() {
       </div>
 
     </main>
-  );
+  )
 }

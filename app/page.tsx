@@ -6,6 +6,7 @@ import WhyItExists from '@/components/WhyItExists';
 import EarlyAccess from '@/components/EarlyAccess';
 import FAQ         from '@/components/FAQ';
 import Footer      from '@/components/Footer';
+import Gateway     from '@/components/Gateway';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <Gateway />
         <StatsBand />
         <WhatVardent />
         <WhyItExists />

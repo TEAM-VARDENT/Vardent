@@ -8,41 +8,36 @@
  * Do NOT edit indentation, colons, commas, or quotes — only
  * change the text values inside the quote marks.
  */
-
 export const site = {
   // ─── SEO ──────────────────────────────────────────────────
   seo: {
-    title:         'VARDENT — Proof Over Promises',
-    description:   'VARDENT is a verified sustainable commerce platform being built to make sustainability claims credible, transparent, and independently verifiable.',
-    ogTitle:       'VARDENT — Proof Over Promises',
-    ogDescription: 'VARDENT is a verified sustainable commerce platform being built to make sustainability claims credible, transparent, and independently verifiable.',
+    title:         'VARDENT — Verified Sustainable Commerce',
+    description:   'Vardent independently verifies product-level sustainability claims — protecting producers who do the work and consumers who choose to pay for it.',
+    ogTitle:       'VARDENT — Verified Sustainable Commerce',
+    ogDescription: 'Vardent independently verifies product-level sustainability claims — protecting producers who do the work and consumers who choose to pay for it.',
     ogUrl:         'https://vardent.co',
     ogImage:       '/og-image.png',
   },
-
   // ─── NAVIGATION ────────────────────────────────────────────
   nav: {
     links: [
-  { href: '/trust', label: 'Vardent Trust' },
-  { href: '/platform', label: 'Vardent Ltd' },
-  { href: '#faq', label: 'FAQ' },
-],
-    
+      { href: '/trust',    label: 'Vardent Trust' },
+      { href: '/platform', label: 'Vardent Ltd'   },
+      { href: '#faq',      label: 'FAQ'           },
+    ],
     cta: { label: 'Join Us', href: 'https://forms.gle/a8LmyUx6r9ytFCNw9' },
   },
-
   // ─── HERO ──────────────────────────────────────────────────
   hero: {
-    kicker:          'Proof Over Promises',
-    headlineLine1:   'Sustainability.',
-    headlineLine2:   'Verified.',
-    headlineLine3:   'Not just claimed.',
-    headlineItalicLine: 'Verified.',
-    description:     'VARDENT is a verified sustainable commerce platform being built to create greater trust in sustainability claims. Claims need evidence. We are building the infrastructure to provide it.',
-    primaryButton:   { label: 'Join the Waitlist', href: '#access' },
-    secondaryButton: { label: 'Learn More',        href: '#what'   },
+    kicker:             'Verified Sustainable Commerce',
+    headlineLine1:      'Greenwashing is',
+    headlineLine2:      'structural.',
+    headlineLine3:      'So is our solution.',
+    headlineItalicLine: 'structural.',
+    description:        'Most sustainability claims have never been independently verified. Sustainable producers pay the cost of doing things right — and lose their own market to cheaper unverified alternatives. Vardent is building the infrastructure to change that.',
+    primaryButton:      { label: 'Vardent Trust', href: '/trust'    },
+    secondaryButton:    { label: 'Vardent Ltd',   href: '/platform' },
   },
-
   // ─── SCORE CARD (hero right panel) ─────────────────────────
   scoreCard: {
     scoreLabel:   'Sustainability Score',
@@ -60,7 +55,6 @@ export const site = {
     transparencyId:      '0xAB3F…7D2C',
     status:              'On-chain · Verified',
   },
-
   // ─── STATS BAND ────────────────────────────────────────────
   stats: [
     {
@@ -79,70 +73,66 @@ export const site = {
       source: 'EU Green Claims Directive',
     },
   ],
-
   // ─── WHAT VARDENT IS ───────────────────────────────────────
   what: {
-    eyebrow:          'What Vardent Is',
-    headlineLine1:    'Not a label.',
-    headlineLine2:    'Infrastructure.',
-    headlineItalicLine: 'Infrastructure.',
+    eyebrow:            'Our Mission',
+    headlineLine1:      'Making sustainability',
+    headlineLine2:      'mean something.',
+    headlineItalicLine: 'mean something.',
     paragraphs: [
-      'VARDENT is not an eco-shop. It is not a badge.',
-      'It is a new trust layer for sustainable commerce, built to help consumers make <strong>more confident choices</strong> and help honest brands stand out.',
-      'When sustainability claims are difficult to verify, everyone loses. Except the brands making empty promises. VARDENT exists to change that.',
+      'Greenwashing is not just a marketing problem. It is a structural failure. The brand writes the claim. The brand pays for the certification. The brand controls what gets disclosed. At every step the organisation with the most commercial interest in a positive result controls the process.',
+      'Meanwhile sustainable producers across Africa pay enormous costs to certify their practices — and then compete on local shelves against cheaper imported alternatives that carried none of those costs and verified none of those claims. The producer who did everything right loses the sale. The consumer who wants to choose better has no reliable signal to act on.',
+      'Vardent exists to break that structure. Independent verification at product level. Producer rights protected at origin. Consumer trust built on evidence — not promises.',
     ],
     cards: [
       {
-        title: 'Independent Standards',
-        body:  'Every claim assessed against a defined standard. Not self-reported, not approximate. Evidence is the only currency.',
+        title: 'Independent Verification',
+        body:  'Every claim assessed by an accredited third party. Not self-reported. Not approximate. Evidence is the only currency.',
         icon:  'star' as const,
       },
       {
-        title: 'Transparent Trust',
-        body:  'Results that are readable, open to scrutiny, and accessible. Credibility requires visibility. Nothing is hidden.',
+        title: 'Producer Rights',
+        body:  'Sustainable producers deserve a market that independently confirms their investment is real — and rewards them for it.',
         icon:  'check' as const,
       },
       {
-        title: 'Meaningful Recognition',
-        body:  'Brands doing the real work deserve a market that can tell the difference. VARDENT makes that distinction clear.',
+        title: 'Consumer Protection',
+        body:  'Every consumer who pays a sustainability premium deserves independently verifiable proof that the claim is true.',
         icon:  'plus' as const,
       },
     ],
   },
-
   // ─── WHY IT EXISTS ─────────────────────────────────────────
   why: {
-    eyebrow:           'Why It Exists',
-    headlineLine1:     'Trust in sustainability needs',
-    headlineLine2:     'a better standard.',
-    headlineItalicLine: 'better standard.',
-    lead: 'When claims are difficult to verify, consumers lose confidence, honest brands lose visibility, and markets become noisy. VARDENT exists to help solve that problem.',
+    eyebrow:            'Why It Exists',
+    headlineLine1:      'Two problems.',
+    headlineLine2:      'One solution.',
+    headlineItalicLine: 'One solution.',
+    lead: 'The producer pays the cost. The consumer pays the premium. Neither gets what they deserve. Vardent is the infrastructure that changes that.',
     cards: [
       {
         number: '01',
-        title:  'Consumers Need Confidence',
-        body:   'Purchasing decisions based on sustainability claims require trust. Without verification, that trust has no foundation. We are building the foundation.',
+        title:  'Producers Lose Their Market',
+        body:   'Sustainable producers pay certification costs, meet higher standards, and price accordingly. Then they compete on local shelves against cheaper unverified alternatives. The market punishes them for doing things right.',
       },
       {
         number: '02',
-        title:  'Honest Brands Need Recognition',
-        body:   'Brands investing in real sustainability are competing against claims they cannot distinguish themselves from. That is a market failure. VARDENT fixes the signal.',
+        title:  'Consumers Cannot Tell the Difference',
+        body:   'A consumer choosing a sustainable product has no reliable way to know if the claim is true. Without independently verifiable evidence, trust has no foundation.',
       },
       {
         number: '03',
-        title:  'Markets Need Better Signals',
-        body:   'Regulators, investors, and consumers are demanding greater accountability. The infrastructure to deliver it has not existed. Until now.',
+        title:  'Markets Need Better Infrastructure',
+        body:   'Regulators, investors, and buyers are demanding verified sustainability data. The infrastructure to deliver it at origin level in African supply chains has not existed. Until now.',
       },
     ],
   },
-
   // ─── EARLY ACCESS ──────────────────────────────────────────
   earlyAccess: {
     eyebrow:       'Early Access',
     headlineLine1: 'Vardent is coming.',
     headlineLine2: 'Be first.',
     lead:          'A serious platform is being built. Join early and be among the first to know when we launch.',
-
     brandForm: {
       title:    'For Brands & Businesses',
       subtitle: 'Register early interest for brand verification.',
@@ -166,21 +156,19 @@ export const site = {
       successTitle:   'Interest Registered',
       successMessage: 'We will be in touch when we are ready for brands.',
     },
-
     consumerForm: {
       title:    'For Consumers',
-      subtitle: 'Join the waitlist for launch updates and early access.',
+      subtitle: 'Join the community for launch updates and early access.',
       fields: {
         name:    { label: 'Your Name',     placeholder: 'Full name'      },
         email:   { label: 'Email Address', placeholder: 'you@email.com'  },
         country: { label: 'Country',       placeholder: 'Country'        },
       },
-      submitLabel:    'Join the Waitlist',
-      successTitle:   'You are on the list.',
+      submitLabel:    'Join the Community',
+      successTitle:   'Welcome to Vardent.',
       successMessage: 'We will notify you first when we launch.',
     },
   },
-
   // ─── FAQ ───────────────────────────────────────────────────
   faq: {
     eyebrow:  'FAQ',
@@ -188,58 +176,59 @@ export const site = {
     subtext:  '',
     items: [
       {
-        question: 'What is VARDENT?',
-        answer:   'VARDENT is a platform being built to increase trust in sustainability claims. We are creating infrastructure that helps consumers make confident choices and helps brands that invest in real sustainability to be clearly recognised for it.',
+        question: 'What is Vardent?',
+        answer:   'Vardent is a verified sustainable commerce platform being built in Accra, Ghana. It independently audits sustainability claims at product level and advocates for the rights of producers and consumers across Africa and beyond.',
       },
       {
-        question: 'Is VARDENT live yet?',
-        answer:   'Not yet. We are currently in development and preparing for launch. Joining the waitlist ensures you will hear from us first when we are ready.',
+        question: 'What is the difference between Vardent Trust and Vardent Ltd?',
+        answer:   'Vardent Trust is our civil and social organisation — advocating for producer rights, consumer protection, and sustainable consumption across Africa. Vardent Ltd is our commercial verification platform — independently auditing sustainability claims at product level and anchoring results permanently on blockchain.',
       },
       {
-        question: 'Who is VARDENT for?',
-        answer:   'VARDENT is designed for consumers seeking confidence in their purchasing decisions, and for brands genuinely committed to credible sustainability. If you value evidence over assertion, VARDENT is built for you.',
+        question: 'Is Vardent live yet?',
+        answer:   'Our pre-launch verification services are available now at vardent.co/services. The full platform is in development. Join the community to be first to know when we launch.',
+      },
+      {
+        question: 'Who is Vardent for?',
+        answer:   'Vardent serves sustainable brands seeking independent verification, EU buyers needing verified African supply chain data for CSRD and EUDR compliance, and sustainability consultants who need independent third-party verification for their clients.',
       },
       {
         question: 'Can brands register interest now?',
-        answer:   'Yes. Brands can register their interest today using the form on this page. We will reach out to brand partners ahead of our public launch.',
+        answer:   'Yes. Brands can register early interest using the form on this page. Pre-launch verification services are also available now — visit vardent.co/platform to learn more.',
       },
       {
-        question: 'Does VARDENT sell products?',
-        answer:   'No. VARDENT is not a retail platform. Our focus is the trust infrastructure: the layer that makes sustainability claims credible and verifiable. We are not a marketplace; we are what makes marketplaces trustworthy.',
+        question: 'How is Vardent different from B Corp or Fair Trade?',
+        answer:   'B Corp and Fair Trade certify organisations. Vardent verifies individual products at SKU level. Every Vardent verification is conducted by an independent accredited auditor — not by Vardent and not by the brand — and anchored permanently on blockchain.',
       },
       {
-        question: 'How is VARDENT different?',
-        answer:   "Our focus is on bringing greater trust, clarity, and transparency to sustainability claims. We are building infrastructure designed for the rigour and accountability that today’s market and today’s regulations demand.",
+        question: 'Why is Vardent built from Ghana?',
+        answer:   'Most verification infrastructure operating in African supply chains was designed outside Africa. Vardent is embedded at origin — verifying where the evidence needs to be generated, not approximating it from the reporting layer downstream.',
       },
       {
-        question: 'When will VARDENT launch?',
-        answer:   'Launch updates will be shared first with early supporters and waitlist members. Join the list to be among the first to know.',
+        question: 'When will Vardent launch?',
+        answer:   'Launch updates will be shared first with community members and waitlist registrants. Join us to be among the first to know.',
       },
       {
-        question: 'Where will VARDENT be available?',
-        answer:   'We are building with broad accessibility in mind. The problem of greenwashing is global, and our ambition reflects that. More details will be shared closer to launch.',
+        question: 'Where will Vardent be available?',
+        answer:   'Vardent is being built for African supply chains supplying global markets — beginning with Ghana and expanding across West Africa and beyond. Pre-launch services are available globally now.',
       },
       {
-        question: 'How can I stay updated?',
-        answer:   'Join the waitlist using the form above, or follow VARDENT updates on LinkedIn. Waitlist members are always the first to receive news and early access opportunities.',
-      },
-      {
-        question: 'Is VARDENT only for large brands?',
-        answer:   'No. VARDENT is designed for brands of genuine commitment, not just brands of a certain size. If your sustainability effort is real, VARDENT is being built to reflect that, regardless of scale.',
+        question: 'Is Vardent only for large brands?',
+        answer:   'No. Vardent is designed for brands of genuine commitment — not brands of a certain size. If your sustainability effort is real, Vardent is built to independently confirm it.',
       },
     ],
   },
-
   // ─── FOOTER ────────────────────────────────────────────────
   footer: {
     wordmark:  { prefix: 'VARD', highlight: 'E', suffix: 'NT' },
-    tagline:   'Proof Over Promises',
+    tagline:   'Verified Sustainable Commerce',
     nav: [
-      { label: 'Privacy',  href: '#',                                      external: false },
-      { label: 'Contact',  href: 'mailto:amobeydeborah2000@gmail.com',     external: false },
-      { label: 'LinkedIn', href: 'https://linkedin.com/company/vardent',   external: true  },
+      { label: 'Privacy',       href: '#',                                                      external: false },
+      { label: 'Contact',       href: 'mailto:deborahamobey@vardent.co',                        external: false },
+      { label: 'LinkedIn',      href: 'https://www.linkedin.com/company/vardent/?viewAsMember=true', external: true },
+      { label: 'Vardent Trust', href: '/trust',                                                 external: false },
+      { label: 'Vardent Ltd',   href: '/platform',                                              external: false },
     ],
     copyright: '© Vardent 2026. All rights reserved.',
-    mission:   'Building the future of trusted sustainable commerce.',
+    mission:   'Making sustainability mean something — for producers and consumers.',
   },
 };

@@ -1,7 +1,8 @@
-import Nav from '@/components/Nav';
-import Footer from '@/components/Footer';
-import Eyebrow from '@/components/ui/Eyebrow';
-import Link from 'next/link';
+import React from 'react'
+import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
+import Link from 'next/link'
+
 export default function VardentTrust() {
   return (
     <>
@@ -16,11 +17,11 @@ export default function VardentTrust() {
           <div className="hero-orb-1" aria-hidden />
           <div className="hero-orb-2" aria-hidden />
           <div className="relative z-[1] max-w-[680px]">
-            <div className="anim-slide-up-1">
-              <Eyebrow>Civil and Social Organisation</Eyebrow>
-            </div>
+            <p className="font-mono text-[11px] font-semibold text-vardent-g2 tracking-[0.12em] uppercase mb-4">
+              Civil and Social Organisation
+            </p>
             <h1
-              className="anim-slide-up-2 font-display font-extrabold leading-[1.06] tracking-[-0.03em] text-vardent-ink mb-7"
+              className="font-display font-extrabold leading-[1.06] tracking-[-0.03em] text-vardent-ink mb-7"
               style={{ fontSize: 'clamp(44px, 5.5vw, 66px)' }}
             >
               Protecting the rights of
@@ -29,35 +30,19 @@ export default function VardentTrust() {
               <br />
               in sustainable commerce.
             </h1>
-            <p className="anim-slide-up-3 font-body text-[18px] leading-[1.75] text-vardent-ink3 max-w-[520px] mb-12">
-              Vardent Trust advocates, educates, and holds the sustainable commerce ecosystem accountable, so that sustainability means something for the people who produce it and the people who choose it.
+            <p className="font-body text-[18px] leading-[1.75] text-vardent-ink3 max-w-[520px] mb-12">
+              Vardent Trust advocates, educates, and holds the sustainable commerce ecosystem accountable — so that sustainability means something for the people who produce it and the people who choose it.
             </p>
-            <div className="anim-slide-up-4 flex gap-[14px] flex-wrap">
+            <div className="flex gap-[14px] flex-wrap">
               <Link
                 href="#community"
-                className={[
-                  'inline-flex items-center',
-                  'bg-vardent-g2 text-white no-underline',
-                  'px-8 py-[15px] rounded-[8px]',
-                  'font-body text-[15px] font-medium tracking-[0.01em]',
-                  'shadow-[0_4px_16px_rgba(15,94,61,0.28)]',
-                  'transition-all duration-200',
-                  'hover:bg-vardent-g3 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(15,94,61,0.36)]',
-                ].join(' ')}
+                className="inline-flex items-center bg-vardent-g2 text-white no-underline px-8 py-[15px] rounded-[8px] font-body text-[15px] font-medium tracking-[0.01em] shadow-[0_4px_16px_rgba(15,94,61,0.28)] transition-all duration-200 hover:bg-vardent-g3 hover:-translate-y-0.5"
               >
                 Join the Community
               </Link>
               <Link
                 href="#what-we-do"
-                className={[
-                  'inline-flex items-center',
-                  'bg-transparent text-vardent-ink2 no-underline',
-                  'px-8 py-[15px] rounded-[8px]',
-                  'font-body text-[15px] font-medium',
-                  'border border-[rgba(15,94,61,0.10)]',
-                  'transition-all duration-200',
-                  'hover:border-vardent-g3 hover:text-vardent-g2 hover:bg-vardent-tint',
-                ].join(' ')}
+                className="inline-flex items-center bg-transparent text-vardent-ink2 no-underline px-8 py-[15px] rounded-[8px] font-body text-[15px] font-medium border border-[rgba(15,94,61,0.10)] transition-all duration-200 hover:border-vardent-g3 hover:text-vardent-g2 hover:bg-vardent-tint"
               >
                 Learn more
               </Link>
@@ -69,7 +54,7 @@ export default function VardentTrust() {
         <section className="section-pad bg-vardent-bg">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[80px] md:gap-20 items-start">
             <div className="reveal">
-              <Eyebrow>The Producer</Eyebrow>
+              <p className="font-mono text-[11px] font-semibold text-vardent-g2 tracking-[0.12em] uppercase mb-4">The Producer</p>
               <h2
                 className="font-display font-bold leading-[1.1] tracking-[-0.025em] text-vardent-ink mb-5"
                 style={{ fontSize: 'clamp(32px, 4vw, 44px)' }}
@@ -83,7 +68,7 @@ export default function VardentTrust() {
               </p>
             </div>
             <div className="reveal">
-              <Eyebrow>The Consumer</Eyebrow>
+              <p className="font-mono text-[11px] font-semibold text-vardent-g2 tracking-[0.12em] uppercase mb-4">The Consumer</p>
               <h2
                 className="font-display font-bold leading-[1.1] tracking-[-0.025em] text-vardent-ink mb-5"
                 style={{ fontSize: 'clamp(32px, 4vw, 44px)' }}
@@ -102,7 +87,7 @@ export default function VardentTrust() {
         {/* WHAT WE DO */}
         <section id="what-we-do" className="section-pad bg-white">
           <div className="text-center mb-16 reveal">
-            <Eyebrow>What We Do</Eyebrow>
+            <p className="font-mono text-[11px] font-semibold text-vardent-g2 tracking-[0.12em] uppercase mb-4">What We Do</p>
             <h2
               className="font-display font-bold leading-[1.1] tracking-[-0.025em] text-vardent-ink mb-5"
               style={{ fontSize: 'clamp(36px, 4.5vw, 52px)' }}
@@ -147,7 +132,7 @@ export default function VardentTrust() {
         {/* CHAPTERS */}
         <section className="section-pad bg-vardent-bg">
           <div className="text-center mb-16 reveal">
-            <Eyebrow>Our Chapters</Eyebrow>
+            <p className="font-mono text-[11px] font-semibold text-vardent-g2 tracking-[0.12em] uppercase mb-4">Our Chapters</p>
             <h2
               className="font-display font-bold leading-[1.1] tracking-[-0.025em] text-vardent-ink mb-5"
               style={{ fontSize: 'clamp(36px, 4.5vw, 52px)' }}
@@ -182,7 +167,7 @@ export default function VardentTrust() {
         {/* COMMUNITY */}
         <section id="community" className="section-pad bg-white">
           <div className="text-center mb-16 reveal">
-            <Eyebrow>Join the Community</Eyebrow>
+            <p className="font-mono text-[11px] font-semibold text-vardent-g2 tracking-[0.12em] uppercase mb-4">Join the Community</p>
             <h2
               className="font-display font-bold leading-[1.1] tracking-[-0.025em] text-vardent-ink mb-5"
               style={{ fontSize: 'clamp(36px, 4.5vw, 52px)' }}
@@ -231,15 +216,7 @@ export default function VardentTrust() {
                 </p>
                 
                   href={item.href}
-                  className={[
-                    'inline-flex items-center',
-                    'bg-vardent-g2 text-white no-underline',
-                    'px-6 py-[12px] rounded-[8px]',
-                    'font-body text-[14px] font-medium',
-                    'shadow-[0_4px_16px_rgba(15,94,61,0.28)]',
-                    'transition-all duration-200',
-                    'hover:bg-vardent-g3 hover:-translate-y-0.5',
-                  ].join(' ')}
+                  className="inline-flex items-center bg-vardent-g2 text-white no-underline px-6 py-[12px] rounded-[8px] font-body text-[14px] font-medium shadow-[0_4px_16px_rgba(15,94,61,0.28)] transition-all duration-200 hover:bg-vardent-g3 hover:-translate-y-0.5"
                 >
                   {item.cta}
                 </a>
@@ -252,7 +229,7 @@ export default function VardentTrust() {
         <section className="section-pad bg-vardent-bg">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[80px] items-center">
             <div className="reveal">
-              <Eyebrow>The Vardent Brief</Eyebrow>
+              <p className="font-mono text-[11px] font-semibold text-vardent-g2 tracking-[0.12em] uppercase mb-4">The Vardent Brief</p>
               <h2
                 className="font-display font-bold leading-[1.1] tracking-[-0.025em] text-vardent-ink mb-5"
                 style={{ fontSize: 'clamp(32px, 4vw, 44px)' }}
@@ -268,15 +245,7 @@ export default function VardentTrust() {
                 href="https://vardentbrief.substack.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={[
-                  'inline-flex items-center',
-                  'bg-vardent-g2 text-white no-underline',
-                  'px-8 py-[15px] rounded-[8px]',
-                  'font-body text-[15px] font-medium tracking-[0.01em]',
-                  'shadow-[0_4px_16px_rgba(15,94,61,0.28)]',
-                  'transition-all duration-200',
-                  'hover:bg-vardent-g3 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(15,94,61,0.36)]',
-                ].join(' ')}
+                className="inline-flex items-center bg-vardent-g2 text-white no-underline px-8 py-[15px] rounded-[8px] font-body text-[15px] font-medium tracking-[0.01em] shadow-[0_4px_16px_rgba(15,94,61,0.28)] transition-all duration-200 hover:bg-vardent-g3 hover:-translate-y-0.5"
               >
                 Read The Vardent Brief →
               </a>
@@ -298,7 +267,7 @@ export default function VardentTrust() {
         {/* LINK TO VARDENT LTD */}
         <section className="section-pad bg-white text-center">
           <div className="reveal max-w-[600px] mx-auto">
-            <Eyebrow>The Platform</Eyebrow>
+            <p className="font-mono text-[11px] font-semibold text-vardent-g2 tracking-[0.12em] uppercase mb-4">The Platform</p>
             <h2
               className="font-display font-bold leading-[1.1] tracking-[-0.025em] text-vardent-ink mb-5"
               style={{ fontSize: 'clamp(32px, 4vw, 44px)' }}
@@ -308,19 +277,11 @@ export default function VardentTrust() {
               <span className="text-vardent-g3">Verified on the platform.</span>
             </h2>
             <p className="font-body text-[18px] leading-[1.75] text-vardent-ink3 mb-8">
-              Vardent Trust is the civil and social organisation behind Vardent, the product-level sustainability verification platform. The Trust builds the community. The platform verifies the claims.
+              Vardent Trust is the civil and social organisation behind Vardent — the product-level sustainability verification platform. The Trust builds the community. The platform verifies the claims.
             </p>
             <Link
               href="/platform"
-              className={[
-                'inline-flex items-center',
-                'bg-transparent text-vardent-ink2 no-underline',
-                'px-8 py-[15px] rounded-[8px]',
-                'font-body text-[15px] font-medium',
-                'border border-[rgba(15,94,61,0.10)]',
-                'transition-all duration-200',
-                'hover:border-vardent-g3 hover:text-vardent-g2 hover:bg-vardent-tint',
-              ].join(' ')}
+              className="inline-flex items-center bg-transparent text-vardent-ink2 no-underline px-8 py-[15px] rounded-[8px] font-body text-[15px] font-medium border border-[rgba(15,94,61,0.10)] transition-all duration-200 hover:border-vardent-g3 hover:text-vardent-g2 hover:bg-vardent-tint"
             >
               Visit Vardent Ltd →
             </Link>

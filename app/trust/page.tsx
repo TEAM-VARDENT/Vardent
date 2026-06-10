@@ -202,7 +202,7 @@ export default function VardentTrust() {
                 Published weekly. Read by ESG professionals across Europe, Africa, and Asia.
               </p>
               <a
-                href="https://vardentbrief.substack.com"
+                href="https://deboraanyawennaamobey.substack.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-vardent-g2 text-white no-underline px-8 py-[15px] rounded-[8px] font-body text-[15px] font-medium"
@@ -216,7 +216,7 @@ export default function VardentTrust() {
                 Making sustainability mean something. Not as a communication exercise. As independently provable evidence.
               </p>
               <p className="font-body text-[14px] text-vardent-g2 font-medium mt-4">
-                Debora Anyawenna Amobey, Founder
+
               </p>
             </div>
           </div>

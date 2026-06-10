@@ -23,12 +23,12 @@ export const site = {
   // ─── NAVIGATION ────────────────────────────────────────────
   nav: {
     links: [
-      { label: 'What We Do',    href: '#what' },
-      { label: 'Why It Matters', href: '#why'  },
-      { href: '/services', label: 'href="https://tally.so/r/5BMNdM" },
-      { label: 'FAQ',            href: '#faq'  },
-    ],
-    cta: { label: 'Join Waitlist', href: '#access' },
+  { href: '/trust', label: 'Vardent Trust' },
+  { href: '/platform', label: 'Vardent Ltd' },
+  { href: '#faq', label: 'FAQ' },
+],
+    
+    cta: { label: 'Join Us', href: 'https://forms.gle/a8LmyUx6r9ytFCNw9' },
   },
 
   // ─── HERO ──────────────────────────────────────────────────

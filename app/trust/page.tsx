@@ -163,7 +163,7 @@ export default function VardentTrust() {
               <p className="font-mono text-[11px] font-semibold text-vardent-g2 tracking-[0.12em] uppercase mb-3">For Producers</p>
               <h3 className="font-display text-[18px] font-bold text-vardent-ink mb-[10px] leading-[1.3]">Register your business</h3>
               <p className="font-body text-[17px] text-vardent-ink3 leading-[1.75] mb-6">Register your cooperative, farm, or sustainable business. Become part of a community that advocates for your rights.</p>
-              <a href="mailto:deborahamobey@vardent.co?subject=Producer Registration" className="inline-flex items-center bg-vardent-g2 text-white no-underline px-6 py-[12px] rounded-[8px] font-body text-[14px] font-medium">
+              <a href="https://forms.gle/a8LmyUx6r9ytFCNw9" className="inline-flex items-center bg-vardent-g2 text-white no-underline px-6 py-[12px] rounded-[8px] font-body text-[14px] font-medium">
                 Register as a Producer
               </a>
             </div>
@@ -171,7 +171,7 @@ export default function VardentTrust() {
               <p className="font-mono text-[11px] font-semibold text-vardent-g2 tracking-[0.12em] uppercase mb-3">For Consumers</p>
               <h3 className="font-display text-[18px] font-bold text-vardent-ink mb-[10px] leading-[1.3]">Join the movement</h3>
               <p className="font-body text-[17px] text-vardent-ink3 leading-[1.75] mb-6">Join the community of conscious consumers who demand independently verified sustainability claims.</p>
-              <a href="mailto:deborahamobey@vardent.co?subject=Consumer Community" className="inline-flex items-center bg-vardent-g2 text-white no-underline px-6 py-[12px] rounded-[8px] font-body text-[14px] font-medium">
+              <a href="https://forms.gle/a8LmyUx6r9ytFCNw9" className="inline-flex items-center bg-vardent-g2 text-white no-underline px-6 py-[12px] rounded-[8px] font-body text-[14px] font-medium">
                 Join as a Consumer
               </a>
             </div>
@@ -179,7 +179,7 @@ export default function VardentTrust() {
               <p className="font-mono text-[11px] font-semibold text-vardent-g2 tracking-[0.12em] uppercase mb-3">For Advocates</p>
               <h3 className="font-display text-[18px] font-bold text-vardent-ink mb-[10px] leading-[1.3]">Build with us</h3>
               <p className="font-body text-[17px] text-vardent-ink3 leading-[1.75] mb-6">Are you a sustainability professional, researcher, founder, or policymaker who shares our mission?</p>
-              <a href="mailto:deborahamobey@vardent.co?subject=Advocate Network" className="inline-flex items-center bg-vardent-g2 text-white no-underline px-6 py-[12px] rounded-[8px] font-body text-[14px] font-medium">
+              <a href="https://forms.gle/a8LmyUx6r9ytFCNw9" className="inline-flex items-center bg-vardent-g2 text-white no-underline px-6 py-[12px] rounded-[8px] font-body text-[14px] font-medium">
                 Join as an Advocate
               </a>
             </div>

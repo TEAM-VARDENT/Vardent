@@ -19,7 +19,7 @@ export default function Nav() {
     <nav
       className={[
         'fixed top-0 left-0 right-0 z-[200]',
-        'h-[80px] flex items-center justify-between',
+        'h-[100px] flex items-center justify-between',
         'container-pad',
         'bg-white/[0.94] backdrop-blur-[20px] [-webkit-backdrop-filter:blur(20px)]',
         'border-b border-[rgba(15,94,61,0.06)]',
@@ -34,8 +34,8 @@ export default function Nav() {
           src="/logo.png"
           alt="Vardent"
           height={96}
-          width={300}
-          className="h-[70px] w-auto sm:h-[80px] md:h-[96px]"
+          width={352}
+          className="h-[70px] w-auto sm:h-[80px] md:h-[88px]"
           priority
         />
       </Link>
@@ -93,7 +93,7 @@ export default function Nav() {
 
       {/* Mobile dropdown */}
       {menuOpen && (
-        <div className="md:hidden absolute top-[80px] left-0 right-0 bg-white/[0.98] backdrop-blur-[20px] border-b border-[rgba(15,94,61,0.08)] shadow-vardent-sm px-6 py-5 flex flex-col gap-4">
+        <div className="md:hidden absolute top-[100px] left-0 right-0 bg-white/[0.98] backdrop-blur-[20px] border-b border-[rgba(15,94,61,0.08)] shadow-vardent-sm px-6 py-5 flex flex-col gap-4">
           {site.nav.links.map((link) => (
             <a
               key={link.href}

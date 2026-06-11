@@ -33,9 +33,9 @@ export default function Nav() {
         <Image
           src="/logo.png"
           alt="Vardent"
-          height={64}
-          width={200}
-          className="h-[50px] w-auto sm:h-[58px] md:h-[64px]"
+          height={96}
+          width={300}
+          className="h-[70px] w-auto sm:h-[80px] md:h-[96px]"
           priority
         />
       </Link>

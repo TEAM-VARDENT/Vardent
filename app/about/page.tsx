@@ -59,7 +59,8 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {sectors.map((sector, idx) => (
             <div key={idx} className="space-y-3">
-              <div className="text-stone-400 font-mono text-sm">0{idx + 1} //</div>
+              {/* Cleaned up string expression to prevent React comment node compilation issues */}
+              <div className="text-stone-400 font-mono text-sm">{"0" + (idx + 1) + " /"}</div>
               <h3 className="text-xl font-bold text-[#0A1F16]">{sector.title}</h3>
               <p className="text-stone-600 text-sm md:text-base leading-relaxed font-normal">{sector.desc}</p>
             </div>
@@ -94,10 +95,9 @@ export default function AboutPage() {
             <p className="text-stone-600 text-base md:text-lg leading-relaxed font-normal mb-6">
               Our work target addresses systemic informational data problems on a macro global scale. Without clear data metrics, supply risks compound daily.
             </p>
-            {/* Visual Abstract Map Reference */}
-            <div className="h-48 rounded-xl bg-[#2B5C43]/5 border border-[#2B5C43]/10 flex flex-col items-center justify-center text-center p-4">
+            <div className="h-44 rounded-xl bg-[#2B5C43]/5 border border-[#2B5C43]/10 flex flex-col items-center justify-center text-center p-4">
               <span className="text-3xl mb-2">🌍</span>
-              <span className="text-xs font-mono tracking-widest text-[#2B5C43] uppercase font-bold">Vardent Telemetry Mapping Map Active</span>
+              <span className="text-xs font-mono tracking-widest text-[#2B5C43] uppercase font-bold">Vardent Telemetry Mapping Active</span>
             </div>
           </div>
           

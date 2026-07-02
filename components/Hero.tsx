@@ -2,90 +2,100 @@
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-[#05130e] overflow-hidden pt-20">
+    <section className="relative min-h-screen bg-[#05140E] text-white flex flex-col justify-between overflow-hidden">
       
-      {/* High-End Geospatial Infrastructure Background Asset */}
-      <div 
-        className="absolute inset-0 opacity-15 pointer-events-none bg-cover bg-center mix-blend-screen"
-        style={{ 
-          backgroundImage: `url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1920&q=80')` 
-        }} 
-      />
-
-      {/* Premium Ambient Grid overlay */}
-      <div className="absolute inset-0 opacity-20 pointer-events-none">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b981_1px,transparent_1px),linear-gradient(to_bottom,#10b981_1px,transparent_1px)] bg-[size:5rem_5rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
-      </div>
-
-      {/* Subtle Data-Point Animations (Simulating live network node activity) */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-1/3 left-1/4 w-2 h-2 bg-emerald-400 rounded-full animate-ping [animation-duration:3s]" />
-        <div className="absolute top-2/3 right-1/3 w-2 h-2 bg-emerald-500 rounded-full animate-ping [animation-duration:4s]" />
-        <div className="absolute top-1/2 left-2/3 w-1.5 h-1.5 bg-teal-400 rounded-full opacity-60 animate-pulse" />
-      </div>
-
-      {/* Main Content Area */}
-      <div className="max-w-7xl mx-auto px-6 relative z-10 w-full py-20 sm:py-32 flex flex-col items-center text-center">
+      {/* 1. IMMERSIVE BACKGROUND: Full-Width Geospatial Overlay Canvas */}
+      <div className="absolute inset-0 z-0">
+        {/* Deep, rich base image blending landscape + human tech elements */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25 mix-blend-luminosity transform scale-105"
+          style={{ 
+            backgroundImage: `url('https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1920&q=80')` 
+          }} 
+        />
+        {/* Dark McKinsey forest gradient mapping */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#05140E]/90 via-[#05140E]/80 to-[#05140E]" />
         
-        {/* Institutional Microbadge */}
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-emerald-950/60 border border-emerald-800/40 rounded-full mb-8 backdrop-blur-sm">
-          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-          <span className="text-xs font-mono tracking-wider text-emerald-300 uppercase">
-            Global Infrastructure Active
+        {/* Animated Network Data Infrastructure Lines */}
+        <div className="absolute inset-0 opacity-15 pointer-events-none">
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b981_1px,transparent_1px),linear-gradient(to_bottom,#10b981_1px,transparent_1px)] bg-[size:6rem_6rem]" />
+          <div className="absolute top-1/4 left-1/3 w-2 h-2 bg-emerald-400 rounded-full animate-ping [animation-duration:4s]" />
+          <div className="absolute top-3/4 right-1/4 w-2 h-2 bg-blue-400 rounded-full animate-ping [animation-duration:6s]" />
+        </div>
+      </div>
+
+      {/* 2. THE OVERLAY MASTER HEADING (Centered Top Core Impact) */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-32 text-center flex-1 flex flex-col justify-center items-center">
+        
+        {/* High-End Global Quote Badge */}
+        <div className="inline-block px-4 py-2 bg-white/[0.03] border border-white/10 rounded-full mb-8 backdrop-blur-md">
+          <span className="text-xs font-mono font-medium uppercase tracking-widest text-[#C29B74]">
+            "From Farm to Market, Trust Must Travel With the Product"
           </span>
         </div>
 
-        {/* The Core Institutional Value Proposition Statement */}
-        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight max-w-5xl leading-[1.1] mb-8">
+        {/* Premium Font Combination Heading */}
+        <h1 className="font-sans font-extrabold text-4xl sm:text-5xl md:text-6xl tracking-tight text-white max-w-5xl leading-[1.12] mb-6">
           Building trusted agricultural commodity supply chains through{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-200">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-blue-300">
             verification, data, technology,
           </span>{' '}
           and collective action.
         </h1>
-
-        {/* Clean Editorial Subtext */}
-        <p className="font-body text-emerald-100/70 text-lg sm:text-xl max-w-3xl leading-relaxed mb-12">
-          VARDENT bridges macro ecological requirements with micro supply network clarity, 
-          deploying real-time cryptographic tracking architecture onto international market pipelines.
+        
+        <p className="font-sans text-stone-400 text-base sm:text-lg max-w-2xl font-light tracking-wide leading-relaxed">
+          VARDENT Global Framework Architecture
         </p>
+      </div>
 
-        {/* Premium Action Gateways */}
-        <div className="flex flex-col sm:flex-row items-center gap-4">
-          <a
-            href="#solutions"
-            className="w-full sm:w-auto px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-medium rounded-xl transition-all shadow-[0_4px_20px_rgba(16,185,129,0.2)] hover:translate-y-[-1px]"
-          >
-            Explore Ecosystem Solutions
-          </a>
-          <a
-            href="/about"
-            className="w-full sm:w-auto px-8 py-4 bg-emerald-950/40 hover:bg-emerald-950/80 text-emerald-300 border border-emerald-800/60 font-medium rounded-xl transition-all backdrop-blur-sm"
-          >
-            Review Institutional Framework
-          </a>
+      {/* 3. FIXED BOTTOM BALANCED SPLIT (Left: Cooperative View | Right: Traceability Data) */}
+      <div className="relative z-10 w-full border-t border-white/10 bg-[#040F0B]/90 backdrop-blur-xl">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 items-stretch">
+          
+          {/* LEFT: Image of Farmers/Cooperative Panel */}
+          <div className="md:col-span-5 relative min-h-[220px] overflow-hidden group border-b md:border-b-0 md:border-r border-white/10">
+            <div 
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+              style={{ 
+                backgroundImage: `url('https://images.unsplash.com/photo-1592997572594-34be01bc36c7?auto=format&fit=crop&w=800&q=80')` 
+              }} 
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#040F0B] via-transparent to-black/20" />
+            <div className="absolute bottom-4 left-6">
+              <span className="text-[10px] font-mono tracking-widest uppercase text-emerald-400 block mb-0.5">Primary Tier</span>
+              <h4 className="text-sm font-semibold tracking-wide text-white">Local Producer Cooperatives</h4>
+            </div>
+          </div>
+
+          {/* RIGHT: Text About Producer Visibility, Traceability, Data */}
+          <div className="md:col-span-7 p-8 sm:p-12 flex flex-col justify-center">
+            <div className="max-w-xl">
+              <div className="inline-flex items-center gap-2 mb-4">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-400" />
+                <h3 className="text-xs font-mono uppercase tracking-widest text-blue-400 font-bold">
+                  Traceability & Visibility Matrix
+                </h3>
+              </div>
+              <p className="font-sans text-stone-300 text-sm sm:text-base leading-relaxed font-light mb-6">
+                We secure institutional data pipelines to yield unmatched producer visibility. 
+                By mapping spatial footprints and verifying micro-transactions, VARDENT ensures 
+                indisputable asset verification and compliance metrics directly from the source landscape.
+              </p>
+              
+              <div className="flex gap-8 text-left border-t border-white/5 pt-4">
+                <div>
+                  <div className="text-xl font-bold text-white font-sans">100%</div>
+                  <div className="text-[10px] font-mono uppercase tracking-wider text-stone-500">Verified Origin</div>
+                </div>
+                <div>
+                  <div className="text-xl font-bold text-white font-sans">Real-Time</div>
+                  <div className="text-[10px] font-mono uppercase tracking-wider text-stone-500">Geospatial Mapping</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-
-        {/* Mini Institutional Metadata Row */}
-        <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 border-t border-emerald-900/40 pt-8 w-full max-w-4xl text-left">
-          <div>
-            <div className="text-xs font-mono uppercase text-emerald-500/70 tracking-wider mb-1">Framework</div>
-            <div className="text-sm font-medium text-emerald-100">WEF / ESG Compliant</div>
-          </div>
-          <div>
-            <div className="text-xs font-mono uppercase text-emerald-500/70 tracking-wider mb-1">Verification Method</div>
-            <div className="text-sm font-medium text-emerald-100">Cryptographic Proof</div>
-          </div>
-          <div>
-            <div className="text-xs font-mono uppercase text-emerald-500/70 tracking-wider mb-1">Data Model</div>
-            <div className="text-sm font-medium text-emerald-100">Geospatial Mapping</div>
-          </div>
-          <div>
-            <div className="text-xs font-mono uppercase text-emerald-500/70 tracking-wider mb-1">Target Assets</div>
-            <div className="text-sm font-medium text-emerald-100">Global Commodities</div>
-          </div>
-        </div>
-
       </div>
 
     </section>

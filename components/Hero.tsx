@@ -2,36 +2,37 @@
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-[#030D0A] text-white flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen bg-[#020A07] text-white flex items-center justify-center overflow-hidden font-sans">
       
-      {/* 1. CINEMATIC FULL-WIDTH VISUAL BACKGROUND */}
+      {/* 1. GEOSPATIAL BACKGROUND INFRASTRUCTURE */}
       <div className="absolute inset-0 z-0">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30 mix-blend-luminosity scale-100 transition-transform duration-1000"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.18] mix-blend-luminosity scale-100"
           style={{ 
             backgroundImage: `url('https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1920&q=80')` 
           }} 
         />
-        {/* Deep, gradient overlay mimicking high-end climate report styling */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#030D0A] via-[#030D0A]/60 to-[#030D0A]/90" />
+        {/* Deep, multi-layered forest green vignette masking */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#020A07]/90 via-transparent to-[#020A07]" />
+        <div className="absolute inset-0 bg-[#020A07]/40 backdrop-blur-[1px]" />
         
-        {/* Subtle, moving data network overlay lines */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b981_1px,transparent_1px),linear-gradient(to_bottom,#10b981_1px,transparent_1px)] bg-[size:5rem_5rem] opacity-10" />
+        {/* Structural Matrix Layer Lines */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b981_1px,transparent_1px),linear-gradient(to_bottom,#10b981_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-[0.06]" />
       </div>
 
-      {/* 2. PREMIUM EDITORIAL CONTENT CORES */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 w-full text-center flex flex-col items-center py-32">
+      {/* 2. MAIN HUB CANVAS */}
+      <div className="relative z-10 max-w-6xl mx-auto px-6 w-full text-center py-28 flex flex-col items-center">
         
-        {/* Minimalist Operational Badge */}
-        <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-950/80 border border-emerald-800/40 rounded mb-8">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-          <span className="text-[10px] font-mono tracking-widest text-emerald-400 uppercase font-medium">
-            Institutional Verification Architecture
+        {/* Core Architectural Badge */}
+        <div className="inline-flex items-center gap-3 px-4 py-1.5 bg-emerald-950/40 border border-emerald-800/30 rounded mb-10 tracking-wider">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#C29B74]" />
+          <span className="text-[10px] font-mono tracking-widest text-[#C29B74] uppercase font-semibold">
+            &ldquo;From Farm to Market, Trust Must Travel With the Product&rdquo;
           </span>
         </div>
 
-        {/* The Master Heading (Using clean, authoritative tracking) */}
-        <h1 className="font-sans font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight text-white leading-[1.15] max-w-5xl mb-8">
+        {/* Master Framework Title */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12] max-w-5xl mb-10">
           Building trusted agricultural commodity supply chains through{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-blue-400">
             verification, data, technology,
@@ -39,34 +40,32 @@ export default function Hero() {
           and collective action.
         </h1>
 
-        {/* Clean, authoritative subtitle row */}
-        <p className="font-sans text-stone-400 text-lg sm:text-xl font-light max-w-2xl leading-relaxed mb-12">
-          Strengthening global commerce pipelines with absolute traceability from source landscape to international markets.
-        </p>
+        {/* Thick Institutional Divider */}
+        <div className="w-12 h-[2px] bg-[#C29B74]/60 mb-10" />
 
-        {/* Primary Call to Action Gates */}
-        <div className="flex flex-col sm:flex-row items-center gap-4">
+        {/* Your Full Official Unedited Mission Statement */}
+        <div className="max-w-4xl bg-white/[0.01] border border-white/5 p-8 rounded-lg backdrop-blur-sm mb-12">
+          <p className="text-stone-300 text-base sm:text-lg md:text-xl font-light leading-relaxed text-center tracking-wide">
+            <span className="font-semibold text-white">VARDENT Global</span> is an organisation strengthening agricultural commodity supply chains by delivering trusted verification, data-driven technologies, and knowledge systems that enable transparency, resilience, and equitable participation for producers, businesses, and consumers.
+          </p>
+        </div>
+
+        {/* Primary Operational Action Blocks */}
+        <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
           <a
             href="#framework"
-            className="w-full sm:w-auto px-7 py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium rounded transition-all shadow-[0_4px_20px_rgba(16,185,129,0.15)]"
+            className="w-full sm:w-auto px-8 py-4 bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-mono uppercase tracking-wider rounded font-medium transition-all shadow-[0_4px_20px_rgba(16,185,129,0.1)]"
           >
-            Explore the Platform
+            Access Data Systems
           </a>
           <a
-            href="/about"
-            className="w-full sm:w-auto px-7 py-3.5 bg-transparent hover:bg-white/5 text-stone-300 border border-stone-700 hover:border-stone-500 text-sm font-medium rounded transition-all"
+            href="/insights"
+            className="w-full sm:w-auto px-8 py-4 bg-transparent hover:bg-white/5 text-stone-300 border border-stone-800 hover:border-stone-600 text-xs font-mono uppercase tracking-wider rounded font-medium transition-all"
           >
-            Read the Briefing
+            Review Trust Research
           </a>
         </div>
 
-      </div>
-
-      {/* Subtle indicator showing there is deeper structural content below */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 opacity-30 animate-bounce">
-        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
       </div>
 
     </section>

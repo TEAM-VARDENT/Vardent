@@ -1,76 +1,74 @@
-import Eyebrow from './ui/Eyebrow';
+'use client';
+
 import { site } from '@/content/site';
 
-const { what } = site;
+interface FeatureItem {
+  icon: string;
+  title: string;
+  text: string;
+}
 
-const icons = {
+const defaultIcons: Record<string, React.ReactNode> = {
   star: (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden>
-      <path
-        d="M10 2L12.5 7.5L18 8.25L14 12L15 17.5L10 14.75L5 17.5L6 12L2 8.25L7.5 7.5L10 2Z"
-        stroke="#0F5E3D"
-        strokeWidth="1.5"
-        strokeLinejoin="round"
-      />
+    <svg className="w-6 h-6 text-vardent-g3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
     </svg>
   ),
-  check: (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden>
-      <circle cx="10" cy="10" r="7" stroke="#0F5E3D" strokeWidth="1.5" />
-      <path d="M7 10l2 2 4-4" stroke="#0F5E3D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  shield: (
+    <svg className="w-6 h-6 text-vardent-g3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
     </svg>
   ),
-  plus: (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden>
-      <rect x="3" y="3" width="14" height="14" rx="3" stroke="#0F5E3D" strokeWidth="1.5" />
-      <path d="M7 10h6M10 7v6" stroke="#0F5E3D" strokeWidth="1.5" strokeLinecap="round" />
+  bolt: (
+    <svg className="w-6 h-6 text-vardent-g3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
     </svg>
-  ),
+  )
 };
 
 export default function WhatVardent() {
+  // Safe defensive configuration check
+  const whatData = (site as any).what || {
+    title: "What is Vardent?",
+    subtitle: "The trusted validation network for commercial enterprise ecosystem compliance.",
+    features: [
+      { icon: "star", title: "Verifiable Credibility", text: "Transform abstract environmental targets into mathematically verifiable, dynamic records." },
+      { icon: "shield", title: "Enterprise Grade Compliance", text: "Align instantly with rigorous international reporting criteria without expanding administrative overhead." },
+      { icon: "bolt", title: "Instant Integrity Integrations", text: "Deploy lightweight, cryptographic checkout validation badges directly onto standard ecommerce APIs." }
+    ]
+  };
+
+  const featuresList = whatData.features || [];
+
   return (
-    <section id="what" className="section-pad bg-vardent-bg">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[80px] md:gap-20 items-start">
-        {/* Left — prose */}
-        <div className="reveal">
-          <Eyebrow>{what.eyebrow}</Eyebrow>
-          <h2
-            className="font-display font-bold leading-[1.1] tracking-[-0.025em] text-vardent-ink mb-5"
-            style={{ fontSize: 'clamp(40px, 5vw, 58px)' }}
-          >
-            {what.headlineLine1}
-            <br />
-            <span className="text-vardent-g3">{what.headlineLine2}</span>
+    <section id="features" className="py-24 bg-white relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        
+        <div className="max-w-3xl mb-16">
+          <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-vardent-ink tracking-tight mb-4">
+            {whatData.title}
           </h2>
-          <div>
-            {what.paragraphs.map((p, i) => (
-              <p
-                key={i}
-                className="font-body text-[19px] leading-[1.8] text-vardent-ink3 mb-[18px] last:mb-0 [&_strong]:text-vardent-ink [&_strong]:font-semibold"
-                dangerouslySetInnerHTML={{ __html: p }}
-              />
-            ))}
-          </div>
+          <p className="font-body text-lg text-vardent-ink3 leading-relaxed">
+            {whatData.subtitle}
+          </p>
         </div>
 
-        {/* Right — feature cards */}
-        <div className="flex flex-col gap-4">
-          {what.cards.map((card) => (
-            <div
-              key={card.title}
-              className="reveal bg-white border border-[rgba(15,94,61,0.10)] rounded-[20px] px-8 py-[30px] transition-all duration-[250ms] hover:-translate-y-[3px] hover:shadow-vardent-md hover:border-[rgba(15,94,61,0.2)]"
-            >
-              <div className="w-11 h-11 bg-vardent-tint rounded-[12px] flex items-center justify-center mb-[18px]">
-                {icons[card.icon]}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+          {featuresList.map((item: FeatureItem, idx: number) => (
+            <div key={idx} className="flex flex-col items-start">
+              <div className="w-12 h-12 bg-vardent-bg rounded-xl flex items-center justify-center mb-6 border border-[rgba(15,94,61,0.06)]">
+                {defaultIcons[item.icon] || defaultIcons.star}
               </div>
-              <h3 className="font-display text-[18px] font-bold text-vardent-ink mb-[10px] leading-[1.3]">
-                {card.title}
+              <h3 className="font-display text-xl font-bold text-vardent-ink mb-3">
+                {item.title}
               </h3>
-              <p className="font-body text-[17px] text-vardent-ink3 leading-[1.75]">{card.body}</p>
+              <p className="font-body text-[15px] text-vardent-ink3 leading-relaxed">
+                {item.text}
+              </p>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

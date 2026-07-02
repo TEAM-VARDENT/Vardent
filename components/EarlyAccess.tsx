@@ -4,8 +4,6 @@ import { useState } from 'react';
 import Eyebrow from './ui/Eyebrow';
 import { site } from '@/content/site';
 
-const { earlyAccess: ea } = site;
-
 type FormState = 'idle' | 'loading' | 'success' | 'error';
 
 function SuccessIcon({ dark }: { dark?: boolean }) {
@@ -106,6 +104,41 @@ export default function EarlyAccess() {
   const [brandError, setBrandError]   = useState('');
   const [consumerState, setConsumerState] = useState<FormState>('idle');
   const [consumerError, setConsumerError] = useState('');
+
+  // Climate-smart default fallback configurations if content keys are missing
+  const ea = (site as any).earlyAccess || {
+    eyebrow: "Early Access",
+    headlineLine1: "Deploy Climate-Smart",
+    headlineLine2: "Commerce Today",
+    lead: "Join our verified sustainable commerce platform.",
+    brandForm: {
+      title: "For Brands & Businesses",
+      subtitle: "Apply to showcase your verified claims.",
+      successTitle: "Application Received",
+      successMessage: "Thank you. Our audit team will contact you shortly.",
+      submitLabel: "Request Brand Invitation",
+      categoryOptions: ["Fashion", "Electronics", "Food & Beverage", "Home Goods"],
+      fields: {
+        company: { label: "Company Name", placeholder: "Vardent Ltd" },
+        name: { label: "Contact Name", placeholder: "Your Name" },
+        email: { label: "Business Email", placeholder: "you@company.com" },
+        category: { label: "Product Category" },
+        country: { label: "Country", placeholder: "United States" }
+      }
+    },
+    consumerForm: {
+      title: "For Conscious Shoppers",
+      subtitle: "Get notified when verified products launch.",
+      successTitle: "You're on the list!",
+      successMessage: "Welcome to the future of transparent supply chains.",
+      submitLabel: "Join Waitlist",
+      fields: {
+        name: { label: "Your Name", placeholder: "Alex" },
+        email: { label: "Email Address", placeholder: "alex@example.com" },
+        country: { label: "Country", placeholder: "United Kingdom" }
+      }
+    }
+  };
 
   const handleBrand = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -211,13 +244,11 @@ export default function EarlyAccess() {
               )}
 
               <form id="bform" onSubmit={handleBrand}>
-
                 <Field label={bf.fields.company.label} name="company" placeholder={bf.fields.company.placeholder} />
                 <Field label={bf.fields.name.label}    name="name"    placeholder={bf.fields.name.placeholder} />
                 <Field label={bf.fields.email.label}   name="email"   type="email" placeholder={bf.fields.email.placeholder} />
                 <SelectField label={bf.fields.category.label} name="category" options={bf.categoryOptions} />
                 <Field label={bf.fields.country.label} name="country" placeholder={bf.fields.country.placeholder} />
-
                 <SubmitButton loading={brandState === 'loading'} label={bf.submitLabel} />
               </form>
             </>
@@ -243,15 +274,10 @@ export default function EarlyAccess() {
                 </p>
               )}
 
-              <form
-                id="cform"
-                onSubmit={handleConsumer}
-              >
-
+              <form id="cform" onSubmit={handleConsumer}>
                 <Field label={cf.fields.name.label}    name="name"    placeholder={cf.fields.name.placeholder}    dark />
                 <Field label={cf.fields.email.label}   name="email"   type="email" placeholder={cf.fields.email.placeholder}   dark />
                 <Field label={cf.fields.country.label} name="country" placeholder={cf.fields.country.placeholder} dark />
-
                 <SubmitButton loading={consumerState === 'loading'} label={cf.submitLabel} dark />
               </form>
             </>

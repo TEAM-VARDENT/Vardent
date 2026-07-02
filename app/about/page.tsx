@@ -5,12 +5,12 @@ export default function AboutPage() {
     { 
       title: 'Smallholder Farmers', 
       desc: 'Optimizing value chains, ensuring fair producer inclusion, and mapping structural asset models across African farming networks.',
-      image: 'https://images.unsplash.com/photo-1590779033100-9f60a05a013d?auto=format&fit=crop&w=600&q=80'
+      image: 'https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcT7X2ZSvRZVq5lqpUwdv8gS1IwDzG_Iguxj55Ww_YHDJtkKrj2PDFK066FEJkCxdHeosCbdSpJS14_8Z9w'
     },
     { 
       title: 'Global Commodity Markets', 
       desc: 'Bringing enterprise-grade traceability, climate compliance data, and verification infrastructure to global buyers.',
-      image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80'
+      image: 'https://www.quantifiedstrategies.com/wp-content/uploads/2024/10/Cocoa-Trading.jpg'
     },
     { 
       title: 'Geospatial Intelligence', 
@@ -41,7 +41,7 @@ export default function AboutPage() {
     <div className="bg-[#FAF9F5] text-[#0A1F16] min-h-screen font-sans flex flex-col justify-between">
       
       <main className="flex-grow">
-        {/* 1. HERO BANNER WITH REFRESHED AGRICULTURAL TERRACE BACKGROUND */}
+        {/* 1. HERO BANNER WITH AGRICULTURAL TERRACE BACKGROUND */}
         <section className="relative min-h-[55vh] pt-32 pb-16 md:py-0 w-full flex items-center justify-center overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -77,7 +77,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 3. OUR KEY SECTORS */}
+        {/* 3. OUR KEY SECTORS WITH CONTEXTUALLY ACCURATE ASSET IMAGES */}
         <section className="max-w-7xl mx-auto px-6 py-24 border-t border-stone-200">
           <h2 className="text-3xl md:text-4xl font-black tracking-tight text-[#0A1F16] mb-16">
             Our Key Sectors
@@ -129,7 +129,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 5. GLOBE DATA METRICS GRID - REAL GIS FARM MAP IMAGE ADDED */}
+        {/* 5. GLOBE DATA METRICS GRID */}
         <section className="max-w-7xl mx-auto px-6 py-24">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             <div>

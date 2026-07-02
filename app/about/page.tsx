@@ -5,13 +5,11 @@ export default function AboutPage() {
     { 
       title: 'Smallholder Farmers', 
       desc: 'Optimizing value chains, ensuring fair producer inclusion, and mapping structural asset models across African farming networks.',
-      // Updated to an excited cocoa farmer holding fresh pods
       image: 'https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSA2sBSEfM3A_Hr6yHTwTF-BHF3pJ3yGSBeLGthFZHJ17rmwbstN3m0E4wJy-pVn-fah24VecGZogPkHWU'
     },
     { 
       title: 'Global Commodity Markets', 
       desc: 'Bringing enterprise-grade traceability, climate compliance data, and verification infrastructure to global buyers.',
-      // Updated to international export crops (coffee, cocoa, grains)
       image: 'https://cdn.shortpixel.ai/spai/q_glossy+w_903+to_webp+ret_img/www.solidaridadnetwork.org/wp-content/uploads/2021/01/Pickers_Colombia_Coffee_Solidaridad-2048x1365.jpg'
     },
     { 
@@ -68,7 +66,7 @@ export default function AboutPage() {
           <div className="p-8 bg-white border border-stone-200 rounded-2xl shadow-sm space-y-4">
             <div className="text-2xl font-serif font-bold text-[#C29B74]">Our Mission</div>
             <p className="text-stone-700 text-base md:text-lg leading-relaxed font-normal">
-              To advance research, advocacy, producer inclusion, capacity building, and uncompromised accountability within agricultural commodity systems, empowering the people and communities that anchor global trade.
+              To strengthen agricultural commodity supply chains by delivering trusted verification, data-driven technologies, and knowledge systems that enable transparency, resilience, and equitable participation for producers, businesses, and consumers.
             </p>
           </div>
           <div className="p-8 bg-[#0A1F16] text-[#FAF9F5] rounded-2xl shadow-sm space-y-4">
@@ -258,7 +256,7 @@ export default function AboutPage() {
           </div>
 
           <div className="pt-8 border-t border-[#1E402B] flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-stone-500">
-            <p>© {new Date().getFullYear()} Vardent. All rights reserved.</p>
+            <p>© 2026 Vardent. All rights reserved.</p>
             <p className="tracking-wider text-xs"> THE VARDENT WAY</p>
           </div>
         </div>

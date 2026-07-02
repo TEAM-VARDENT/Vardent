@@ -5,7 +5,7 @@ export default function AboutPage() {
     { 
       title: 'Smallholder Agriculture', 
       desc: 'Optimizing value chains, ensuring fair producer inclusion, and mapping structural asset models across African farming networks.',
-      image: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=600&q=80'
+      image: 'https://images.unsplash.com/photo-1590779033100-9f60a05a013d?auto=format&fit=crop&w=600&q=80'
     },
     { 
       title: 'Global Commodity Markets', 
@@ -20,7 +20,7 @@ export default function AboutPage() {
     { 
       title: 'Digital Public Goods', 
       desc: 'Building open-access framework elements, ecosystem capacity, and digital tools for sustainable governance.',
-      image: 'https://images.unsplash.com/photo-1531206715517-5c0ba140e2b8?auto=format&fit=crop&w=600&q=80'
+      image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80'
     }
   ];
 
@@ -41,29 +41,30 @@ export default function AboutPage() {
     <div className="bg-[#FAF9F5] text-[#0A1F16] min-h-screen font-sans flex flex-col justify-between">
       
       <main className="flex-grow">
-        {/* 1. HERO BANNER WITH BEAUTIFUL AGRICULTURE BACKGROUND */}
-        <section className="relative min-h-[55vh] pt-32 pb-16 md:py-0 w-full flex items-center justify-center overflow-hidden">
+        {/* 1. HERO BANNER - CINEMATIC AGRICULTURAL LANDSCAPE */}
+        <section className="relative h-[40vh] md:h-[45vh] w-full overflow-hidden">
           <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-100"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ 
-              backgroundImage: "url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=2560&q=95')" 
+              backgroundImage: "url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=2560&q=95')" 
             }} 
           />
-          <div className="absolute inset-0 bg-black/50 backdrop-blur-[0.5px]" />
-
-          <div className="relative z-10 max-w-6xl mx-auto px-6 text-center flex flex-col items-center">
-            <span className="text-[#C29B74] font-mono text-xs uppercase tracking-widest font-bold block mb-4">Institutional Profile</span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-white mb-6">
-              About Vardent
-            </h1>
-            <p className="text-stone-200 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-normal">
-              An independent data infrastructure, technology architecture, and research entity dedicated to building complete integrity and shared value across agricultural commodity systems.
-            </p>
-          </div>
+          <div className="absolute inset-0 bg-black/10" />
         </section>
 
-        {/* 2. MISSION & VISION MATRIX */}
-        <section className="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-12">
+        {/* 2. INSTITUTIONAL HEADER - PLACED CLEANLY BELOW BANNER IMAGE */}
+        <section className="max-w-6xl mx-auto px-6 pt-16 pb-8 text-center flex flex-col items-center">
+          <span className="text-[#C29B74] font-mono text-xs uppercase tracking-widest font-bold block mb-4">Institutional Profile</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-[#0A1F16] mb-6">
+            About Vardent
+          </h1>
+          <p className="text-stone-700 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-normal">
+            An independent data infrastructure, technology architecture, and research entity dedicated to building complete integrity and shared value across agricultural commodity systems.
+          </p>
+        </section>
+
+        {/* 3. MISSION & VISION MATRIX */}
+        <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="p-8 bg-white border border-stone-200 rounded-2xl shadow-sm space-y-4">
             <div className="text-2xl font-serif font-bold text-[#C29B74]">Our Mission</div>
             <p className="text-stone-700 text-base md:text-lg leading-relaxed font-normal">
@@ -78,7 +79,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 3. KEY SECTORS WE WORK IN WITH IMAGES */}
+        {/* 4. KEY SECTORS WE WORK IN WITH FIXED IMAGES */}
         <section className="max-w-7xl mx-auto px-6 py-24 border-t border-stone-200">
           <h2 className="text-3xl md:text-4xl font-black tracking-tight text-[#0A1F16] mb-16">
             Key Sectors We Work In
@@ -89,7 +90,7 @@ export default function AboutPage() {
                 key={idx} 
                 className="group relative bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-[400px]"
               >
-                <div className="h-40 w-full overflow-hidden relative">
+                <div className="h-40 w-full overflow-hidden relative bg-stone-100">
                   <img 
                     src={sector.image} 
                     alt={sector.title}
@@ -113,7 +114,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 4. WHAT MAKES US DIFFERENT */}
+        {/* 5. WHAT MAKES US DIFFERENT */}
         <section className="bg-[#0A1F16] text-[#FAF9F5] py-24 my-12">
           <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-3xl md:text-4xl font-black tracking-tight text-white mb-16">
@@ -130,7 +131,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 5. GLOBE DATA METRICS GRID */}
+        {/* 6. GLOBE DATA METRICS GRID */}
         <section className="max-w-7xl mx-auto px-6 py-24">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             <div>
@@ -157,7 +158,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 6. OUR COLLABORATION MODEL */}
+        {/* 7. OUR COLLABORATION MODEL */}
         <section className="max-w-7xl mx-auto px-6 py-24 border-t border-stone-200">
           <h2 className="text-3xl md:text-4xl font-black tracking-tight text-[#0A1F16] mb-12">
             Our Collaboration Model
@@ -178,7 +179,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 7. RE-DESIGNED FOREST GREEN CALL TO ACTION */}
+        {/* 8. RE-DESIGNED FOREST GREEN CALL TO ACTION */}
         <section className="max-w-5xl mx-auto px-6 py-20 text-center border-t border-stone-200">
           <div className="bg-[#0A1F16] text-[#FAF9F5] rounded-3xl p-12 space-y-6 shadow-xl">
             <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
@@ -199,7 +200,7 @@ export default function AboutPage() {
         </section>
       </main>
 
-      {/* 8. MATCHING INSTITUTIONAL FOOTER */}
+      {/* 9. MATCHING INSTITUTIONAL FOOTER */}
       <footer className="bg-[#0A1F16] text-[#FAF9F5] border-t border-[#1E402B] pt-16 pb-12">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">

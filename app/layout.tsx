@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { Inter, JetBrains_Mono } from 'next/font/google';
-import './globals.css';
+import './main.css';
 import { site } from '@/content/site';
 import RevealInit from '@/components/RevealInit';
 
@@ -21,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: 'Vardent — Verified Sustainable Commerce',
-  description: 'Every product independently audited. Every claim blockchain-anchored.',
+  description: 'Every product independently audited. Every claim blockchain-anchored..',
   verification: {
     google: 'ZXsVjgvFRDLw_5KUoBFkO5WpXJLS2qGIIcNfmX8SdYs',
   },

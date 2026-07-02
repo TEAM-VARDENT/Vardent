@@ -1,27 +1,13 @@
-import Nav        from '@/components/Nav';
-import Hero       from '@/components/Hero';
-import StatsBand  from '@/components/StatsBand';
-import WhatVardent from '@/components/WhatVardent';
-import WhyItExists from '@/components/WhyItExists';
-import EarlyAccess from '@/components/EarlyAccess';
-import FAQ         from '@/components/FAQ';
-import Footer      from '@/components/Footer';
-import Gateway     from '@/components/Gateway';
+import Hero from '@/components/Hero';
 
 export default function Home() {
   return (
-    <>
-      <Nav />
-      <main>
-        <Hero />
-        <Gateway />
-        <StatsBand />
-        <WhatVardent />
-        <WhyItExists />
-        <EarlyAccess />
-        <FAQ />
-      </main>
-      <Footer />
-    </>
+    <main className="bg-[#030D0A] min-h-screen">
+      {/* 1. Our Cinematic Hero Canvas */}
+      <Hero />
+      
+      {/* 2. Future Homepage Sections Will Go Right Here */}
+      {/* We can add a clean, spacious "Farm to Market" section here next! */}
+    </main>
   );
 }

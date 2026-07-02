@@ -32,140 +32,154 @@ export default function Hero() {
   ];
 
   return (
-    <div className="bg-[#FAF9F5] text-[#0A1F16] min-h-screen font-sans">
+    <div className="bg-[#FAF9F5] text-[#0A1F16] min-h-screen font-sans flex flex-col justify-between">
       
-      {/* 1. CINEMATIC HALF-HEIGHT BANNER WITH HIGH-DEFINITION LANDSCAPE */}
-      <section className="relative min-h-[55vh] pt-32 pb-16 md:py-0 w-full flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-100"
-          style={{ 
-            backgroundImage: `url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=2560&q=95')` 
-          }} 
-        />
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-[0.5px]" />
+      <main className="flex-grow">
+        {/* 1. CINEMATIC HALF-HEIGHT BANNER WITH HIGH-DEFINITION LANDSCAPE */}
+        <section className="relative min-h-[55vh] pt-32 pb-16 md:py-0 w-full flex items-center justify-center overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-100"
+            style={{ 
+              backgroundImage: `url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=2560&q=95')` 
+            }} 
+          />
+          <div className="absolute inset-0 bg-black/40 backdrop-blur-[0.5px]" />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6 text-center flex flex-col items-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.2] mb-10 max-w-5xl">
-            Building trusted agricultural commodity supply chains through verification, data, technology, and collective action.
-          </h1>
-          <a
-            href="#contact"
-            className="px-10 py-4 bg-[#2B5C43] hover:bg-[#1E402B] text-white text-base font-semibold rounded-full transition-all duration-200 transform hover:scale-[1.02] shadow-lg"
-          >
-            Get in Touch
-          </a>
-        </div>
-      </section>
-
-      {/* 2. CONTEXTUAL TRUST & EVIDENCE INTRODUCTION BLOCK */}
-      <section className="max-w-4xl mx-auto px-6 pt-24 pb-12">
-        <div className="border-l-4 border-[#C29B74] pl-6 md:pl-8">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0A1F16] tracking-tight leading-tight mb-6">
-            Agricultural supply chains need trust built on evidence.
-          </h2>
-          <div className="space-y-4 text-stone-700 text-base md:text-lg leading-relaxed font-normal">
-            <p>
-              Agricultural commodity markets are becoming more complex. Buyers require greater transparency. 
-              Producers face increasing sustainability expectations. Governments are strengthening regulatory frameworks. 
-              Yet many supply chains still rely on fragmented information, disconnected systems, and inconsistent verification.
-            </p>
-            <p className="font-semibold text-[#0A1F16]">
-              Without trusted evidence, sustainable practices become difficult to measure, difficult to reward, and difficult to scale.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. WHAT WE DO PILLARS GRID */}
-      <section className="max-w-7xl mx-auto px-6 py-16">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-[#0A1F16] mb-16 capitalize">
-          What we do
-        </h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {whatWeDo.map((item, index) => (
-            <div 
-              key={index} 
-              className="group relative bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col min-h-[460px] lg:h-[480px]"
+          <div className="relative z-10 max-w-6xl mx-auto px-6 text-center flex flex-col items-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.2] mb-10 max-w-5xl">
+              Building trusted agricultural commodity supply chains through verification, data, technology, and collective action.
+            </h1>
+            <a
+              href="#contact"
+              className="px-10 py-4 bg-[#2B5C43] hover:bg-[#1E402B] text-white text-base font-semibold rounded-full transition-all duration-200 transform hover:scale-[1.02] shadow-lg"
             >
-              <div className="h-44 w-full overflow-hidden relative">
-                <img 
-                  src={item.image} 
-                  alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+              Get in Touch
+            </a>
+          </div>
+        </section>
+
+        {/* 2. CONTEXTUAL TRUST & EVIDENCE INTRODUCTION BLOCK */}
+        <section className="max-w-4xl mx-auto px-6 pt-24 pb-12">
+          <div className="border-l-4 border-[#C29B74] pl-6 md:pl-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0A1F16] tracking-tight leading-tight mb-6">
+              Agricultural supply chains need trust built on evidence.
+            </h2>
+            <div className="space-y-4 text-stone-700 text-base md:text-lg leading-relaxed font-normal">
+              <p>
+                Agricultural commodity markets are becoming more complex. Buyers require greater transparency. 
+                Producers face increasing sustainability expectations. Governments are strengthening regulatory frameworks. 
+                Yet many supply chains still rely on fragmented information, disconnected systems, and inconsistent verification.
+              </p>
+              <p className="font-semibold text-[#0A1F16]">
+                Without trusted evidence, sustainable practices become difficult to measure, difficult to reward, and difficult to scale.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 3. WHAT WE DO PILLARS GRID */}
+        <section className="max-w-7xl mx-auto px-6 py-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-[#0A1F16] mb-16 capitalize">
+            What we do
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {whatWeDo.map((item, index) => (
+              <div 
+                key={index} 
+                className="group relative bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col min-h-[460px] lg:h-[480px]"
+              >
+                <div className="h-44 w-full overflow-hidden relative">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                </div>
+                
+                <div className="p-6 flex-1 flex flex-col justify-between bg-white">
+                  <div>
+                    <h3 className="text-xl font-bold text-[#0A1F16] mb-3 leading-tight min-h-[56px] flex items-center">
+                      {item.title}
+                    </h3>
+                    <p className="text-stone-700 text-sm md:text-base leading-relaxed font-normal">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
               </div>
-              
-              <div className="p-6 flex-1 flex flex-col justify-between bg-white">
+            ))}
+          </div>
+        </section>
+
+        {/* 4. CORE STRATEGIC PRINCIPLES ARCHITECTURE */}
+        <section className="max-w-7xl mx-auto px-6 py-24 border-t border-stone-200">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-[#0A1F16] mb-16">
+            Our principles
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+            {principles.map((principle, index) => (
+              <div key={index} className="flex items-start gap-4">
+                <span className="text-[#C29B74] font-serif text-2xl font-bold mt-0.5">✺</span>
                 <div>
-                  <h3 className="text-xl font-bold text-[#0A1F16] mb-3 leading-tight min-h-[56px] flex items-center">
-                    {item.title}
-                  </h3>
-                  <p className="text-stone-700 text-sm md:text-base leading-relaxed font-normal">
-                    {item.description}
+                  <h4 className="text-lg sm:text-xl font-bold text-[#0A1F16] mb-2">
+                    {principle.title}
+                </h4>
+                  <p className="text-stone-600 text-base md:text-lg font-normal leading-relaxed">
+                    {principle.text}
                   </p>
                 </div>
               </div>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      {/* 5. PROFESSIONAL ENTERPRISE FOOTER */}
+      <footer className="bg-[#0A1F16] text-[#FAF9F5] border-t border-[#1E402B] pt-16 pb-12">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            
+            {/* Brand / Mission Column */}
+            <div className="md:col-span-2 space-y-4">
+              <span className="text-xl font-black tracking-wider text-white">VARDENT</span>
+              <p className="text-stone-400 text-sm max-w-sm leading-relaxed">
+                Building integrity, visibility, and shared value across global agricultural commodity markets through data and technology.
+              </p>
             </div>
-          ))}
-        </div>
-      </section>
 
-      {/* 4. CORE STRATEGIC PRINCIPLES ARCHITECTURE */}
-      <section className="max-w-7xl mx-auto px-6 py-24 border-t border-stone-200">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-[#0A1F16] mb-16">
-          Our principles
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
-          {principles.map((principle, index) => (
-            <div key={index} className="flex items-start gap-4">
-              <span className="text-[#C29B74] font-serif text-2xl font-bold mt-0.5">✺</span>
-              <div>
-                <h4 className="text-lg sm:text-xl font-bold text-[#0A1F16] mb-2">
-                  {principle.title}
-                </h4>
-                <p className="text-stone-600 text-base md:text-lg font-normal leading-relaxed">
-                  {principle.text}
-                </p>
-              </div>
+            {/* Quick Navigation Links */}
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-[#C29B74] mb-4">Focus Areas</h4>
+              <ul className="space-y-2 text-sm text-stone-400">
+                <li><a href="#" className="hover:text-white transition-colors">Strategic Research</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Geospatial Systems</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Verification Analytics</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Capacity Building</a></li>
+              </ul>
             </div>
-          ))}
-        </div>
-      </section>
 
-      {/* 5. WORKING TOGETHER & TRUSTED LOGO MARQUEE */}
-      <section className="max-w-7xl mx-auto px-6 py-24 border-t border-stone-200">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-          
-          <div>
-            <h2 className="text-3xl font-black tracking-tight text-[#0A1F16] mb-4">
-              Working together
-            </h2>
-            <p className="text-stone-600 text-base md:text-lg font-normal leading-relaxed">
-              We believe trusted agricultural systems are built through collaboration.
-            </p>
+            {/* Regulatory / Engagement Info */}
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-[#C29B74] mb-4">Connect</h4>
+              <ul className="space-y-2 text-sm text-stone-400">
+                <li><a href="#contact" className="hover:text-white transition-colors">Contact Engagement</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Privacy Framework</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Terms of Use</a></li>
+              </ul>
+            </div>
+
           </div>
 
-          {/* Institutional Partner Placeholder Framework */}
-          <div className="lg:col-span-2 grid grid-cols-2 sm:grid-cols-4 gap-8 items-center opacity-40 grayscale contrast-200">
-            <div className="h-12 border border-dashed border-stone-400 rounded-lg flex items-center justify-center text-xs font-mono tracking-widest text-stone-500 select-none">
-              PARTNER_01
-            </div>
-            <div className="h-12 border border-dashed border-stone-400 rounded-lg flex items-center justify-center text-xs font-mono tracking-widest text-stone-500 select-none">
-              PARTNER_02
-            </div>
-            <div className="h-12 border border-dashed border-stone-400 rounded-lg flex items-center justify-center text-xs font-mono tracking-widest text-stone-500 select-none">
-              PARTNER_03
-            </div>
-            <div className="h-12 border border-dashed border-stone-400 rounded-lg flex items-center justify-center text-xs font-mono tracking-widest text-stone-500 select-none">
-              PARTNER_04
-            </div>
+          {/* Copyright and Baseline Stamp */}
+          <div className="pt-8 border-t border-[#1E402B] flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-500">
+            <p>© {new Date().getFullYear()} Vardent. All rights reserved.</p>
+            <p className="tracking-wider">THE VARDENT WAY</p>
           </div>
-
         </div>
-      </section>
+      </footer>
 
     </div>
   );

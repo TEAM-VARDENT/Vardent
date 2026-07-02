@@ -15,12 +15,14 @@ export default function Hero() {
     {
       title: 'Technology',
       description: 'We develop digital systems that improve traceability, visibility, and supply chain management.',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80'
+      // High-end digital smart-agriculture monitoring & ag-tech systems image
+      image: 'https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?auto=format&fit=crop&w=600&q=80'
     },
     {
       title: 'Knowledge',
       description: 'We strengthen understanding through research, capacity building, and ecosystem engagement.',
-      image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=600&q=80'
+      // Authentic communal agricultural workshop, capacity building, and farmer empowerment image
+      image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80'
     }
   ];
 
@@ -34,7 +36,7 @@ export default function Hero() {
   return (
     <div className="bg-[#FAF9F5] text-[#0A1F16] min-h-screen font-sans">
       
-      {/* 1. CINEMATIC BANNER - Added mobile padding safety net (pt-32) */}
+      {/* 1. CINEMATIC HALF-HEIGHT BANNER */}
       <section className="relative min-h-[55vh] pt-32 pb-16 md:py-0 w-full flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-100"
@@ -45,7 +47,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[0.5px]" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center flex flex-col items-center">
-          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.2] mb-10 max-w-5xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.2] mb-10 max-w-5xl">
             Building trusted agricultural commodity supply chains through verification, data, technology, and collective action.
           </h1>
           <a
@@ -57,10 +59,10 @@ export default function Hero() {
         </div>
       </section>
 
-      {/* 2. WHAT WE DO BLOCK WITH PRESERVED CARD IMAGES */}
+      {/* 2. WHAT WE DO BLOCK WITH TARGETED THEMATIC IMAGES */}
       <section className="max-w-7xl mx-auto px-6 py-24">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-[#0A1F16] mb-16">
-          Building the foundation for trusted agriculture
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-[#0A1F16] mb-16 capitalize">
+          What we do
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -69,6 +71,7 @@ export default function Hero() {
               key={index} 
               className="group relative bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-[380px]"
             >
+              {/* Card Feature Image */}
               <div className="h-44 w-full overflow-hidden relative">
                 <img 
                   src={item.image} 
@@ -78,6 +81,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
               
+              {/* Card Content Matrix */}
               <div className="p-6 flex-1 flex flex-col justify-between bg-white">
                 <div>
                   <h3 className="text-xl font-bold text-[#0A1F16] mb-3">

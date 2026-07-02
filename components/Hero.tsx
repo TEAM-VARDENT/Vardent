@@ -4,20 +4,20 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen bg-[#020A07] text-white flex items-center justify-center overflow-hidden font-sans">
       
-      {/* 1. GEOSPATIAL BACKGROUND INFRASTRUCTURE */}
+      {/* 1. HIGH-DEFINITION PREMIUM CINEMATIC BACKGROUND */}
       <div className="absolute inset-0 z-0">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.18] mix-blend-luminosity scale-100"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.24] scale-100"
           style={{ 
-            backgroundImage: `url('https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1920&q=80')` 
+            backgroundImage: `url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=2560&q=95')` 
           }} 
         />
-        {/* Deep, multi-layered forest green vignette masking */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#020A07]/90 via-transparent to-[#020A07]" />
-        <div className="absolute inset-0 bg-[#020A07]/40 backdrop-blur-[1px]" />
+        {/* Layered corporate gradient masks for maximum text legibility and depth */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#020A07]/95 via-[#020A07]/50 to-[#020A07]" />
+        <div className="absolute inset-0 bg-[#020A07]/20 backdrop-blur-[0.5px]" />
         
-        {/* Structural Matrix Layer Lines */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b981_1px,transparent_1px),linear-gradient(to_bottom,#10b981_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-[0.06]" />
+        {/* Fine-line structural geospatial matrix network overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b981_1px,transparent_1px),linear-gradient(to_bottom,#10b981_1px,transparent_1px)] bg-[size:5rem_5rem] opacity-[0.05]" />
       </div>
 
       {/* 2. MAIN HUB CANVAS */}
@@ -43,7 +43,7 @@ export default function Hero() {
         {/* Thick Institutional Divider */}
         <div className="w-12 h-[2px] bg-[#C29B74]/60 mb-10" />
 
-        {/* Your Full Official Unedited Mission Statement */}
+        {/* Official Unedited Mission Statement Container */}
         <div className="max-w-4xl bg-white/[0.01] border border-white/5 p-8 rounded-lg backdrop-blur-sm mb-12">
           <p className="text-stone-300 text-base sm:text-lg md:text-xl font-light leading-relaxed text-center tracking-wide">
             <span className="font-semibold text-white">VARDENT Global</span> is an organisation strengthening agricultural commodity supply chains by delivering trusted verification, data-driven technologies, and knowledge systems that enable transparency, resilience, and equitable participation for producers, businesses, and consumers.

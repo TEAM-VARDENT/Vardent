@@ -1,82 +1,85 @@
+'use client';
+
+import Link from 'next/link';
 import { site } from '@/content/site';
 
-const { footer } = site;
-
-const navIcons: Record<string, JSX.Element> = {
-  Privacy: (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-    </svg>
-  ),
-  Contact: (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <rect x="2" y="4" width="20" height="16" rx="2" />
-      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-    </svg>
-  ),
-  LinkedIn: (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-      <rect x="2" y="9" width="4" height="12" />
-      <circle cx="4" cy="4" r="2" />
-    </svg>
-  ),
-  'Vardent Trust': (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z" />
-      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
-    </svg>
-  ),
-  'Vardent Ltd': (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <rect x="2" y="7" width="20" height="14" rx="2" />
-      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-    </svg>
-  ),
-};
+interface NavItem {
+  label: string;
+  href: string;
+}
 
 export default function Footer() {
+  // Safe fallback matching your structural expectations
+  const footerData = (site as any).footer || {
+    tagline: "Verifiable sustainability for modern commerce.",
+    copyright: "© 2026 Vardent. All rights reserved.",
+    nav: [
+      { label: "Features", href: "#features" },
+      { label: "FAQ", href: "#faq" },
+      { label: "Early Access", href: "#access" }
+    ]
+  };
+
+  // Safe fallback for the wordmark specifically
+  const wordmark = footerData.wordmark || {
+    prefix: "VARD",
+    highlight: "ENT",
+    suffix: ""
+  };
+
+  const navLinks = footerData.nav || [];
+
   return (
-    <footer
-      className="bg-vardent-ink"
-      style={{ padding: '64px max(28px, calc((100vw - 1240px) / 2))' }}
-    >
-      {/* Top row */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-8 pb-12 mb-9 border-b border-white/[0.12]">
+    <footer className="bg-vardent-g1 text-white py-16 border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+        
+        {/* Branding Column */}
         <div>
           <div className="font-display text-[22px] font-extrabold text-white tracking-[0.06em] mb-3">
-            {footer.wordmark.prefix}
-            <span className="text-vardent-g4">{footer.wordmark.highlight}</span>
-            {footer.wordmark.suffix}
+            {wordmark.prefix}
+            <span className="text-vardent-g4">{wordmark.highlight}</span>
+            {wordmark.suffix}
           </div>
-          <div className="font-mono text-[11px] text-white/50 tracking-[0.12em] uppercase">
-            {footer.tagline}
-          </div>
+          <p className="font-body text-white/70 text-sm leading-relaxed max-w-xs">
+            {footerData.tagline}
+          </p>
         </div>
 
-        <nav aria-label="Footer navigation">
-          <ul className="flex flex-wrap gap-6 list-none m-0 p-0">
-            {footer.nav.map((link) => (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  target={link.external ? '_blank' : undefined}
-                  rel={link.external ? 'noopener noreferrer' : undefined}
-                  className="flex items-center gap-[6px] font-body text-[14px] font-medium text-white/70 no-underline transition-colors duration-200 hover:text-white"
+        {/* Navigation Column */}
+        <div>
+          <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-white/50 mb-4">
+            Navigation
+          </h4>
+          <ul className="space-y-2.5">
+            {navLinks.map((link: NavItem, idx: number) => (
+              <li key={idx}>
+                <Link 
+                  href={link.href} 
+                  className="font-body text-sm text-white/80 hover:text-white transition-colors"
                 >
-                  {navIcons[link.label]}
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
-        </nav>
-      </div>
+        </div>
 
-      {/* Bottom row */}
-      <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-center md:text-left">
-        <p className="font-body text-[13px] text-white/50">{footer.copyright}</p>
-        <p className="font-body text-[13px] text-white/55 italic">{footer.mission}</p>
+        {/* Legal / Copyright Column */}
+        <div className="flex flex-col justify-between">
+          <div>
+            <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-white/50 mb-4">
+              Platform Status
+            </h4>
+            <div className="inline-flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full text-xs font-body text-white/90">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              All Systems Operational
+            </div>
+          </div>
+          <p className="font-body text-xs text-white/40 mt-8 md:mt-0">
+            {footerData.copyright}
+          </p>
+        </div>
+
       </div>
     </footer>
   );

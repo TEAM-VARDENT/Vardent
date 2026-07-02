@@ -3,25 +3,23 @@
 export default function Hero() {
   const whatWeDo = [
     {
-      title: 'Verification',
-      description: 'We help organisations establish credible evidence for sustainability practices, claims, and supply chain performance.',
+      title: 'Strategic Research & Accountability',
+      description: 'We help institutions, organizations, and supply chain actors establish credible evidence and sustainable accountability the Vardent Way through independent think-tank policy research, baseline data, rigorous project appraisals, and feasibility studies.',
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80'
     },
     {
-      title: 'Data',
-      description: 'We transform agricultural information into actionable intelligence that supports better decisions.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'
-    },
-    {
-      title: 'Technology',
-      description: 'We develop digital systems that improve traceability, visibility, and supply chain management.',
-      // High-end digital smart-agriculture monitoring & ag-tech systems image
+      title: 'Geospatial Engineering & Hardware',
+      description: 'We help producers and enterprises deploy customized geospatial systems, navigate complex land tenure frameworks, map farm plans for institutional loan acquisitions, and secure premium handheld rugged GPS device configurations.',
       image: 'https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?auto=format&fit=crop&w=600&q=80'
     },
     {
-      title: 'Knowledge',
-      description: 'We strengthen understanding through research, capacity building, and ecosystem engagement.',
-      // Authentic communal agricultural workshop, capacity building, and farmer empowerment image
+      title: 'Commodity Data & Verification Analytics',
+      description: 'We help agribusinesses transform field-level data collection into commercialization models and actionable analytics while providing end-to-end cocoa certification support to satisfy global compliance standards.',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'
+    },
+    {
+      title: 'Capacity Building & Advocacy Hub',
+      description: 'We help local communities, youth, and consumers build long-term sustainability capacity through geospatial literacy bootcamps in cocoa regions, grassroots workforce training, and targeted producer inclusion campaigns.',
       image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80'
     }
   ];
@@ -36,7 +34,7 @@ export default function Hero() {
   return (
     <div className="bg-[#FAF9F5] text-[#0A1F16] min-h-screen font-sans">
       
-      {/* 1. CINEMATIC HALF-HEIGHT BANNER */}
+      {/* 1. CINEMATIC HALF-HEIGHT BANNER WITH HIGH-DEFINITION LANDSCAPE */}
       <section className="relative min-h-[55vh] pt-32 pb-16 md:py-0 w-full flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-100"
@@ -54,12 +52,12 @@ export default function Hero() {
             href="#contact"
             className="px-10 py-4 bg-[#2B5C43] hover:bg-[#1E402B] text-white text-base font-semibold rounded-full transition-all duration-200 transform hover:scale-[1.02] shadow-lg"
           >
-            Get in touch
+            Get in Touch
           </a>
         </div>
       </section>
 
-      {/* 2. WHAT WE DO BLOCK WITH TARGETED THEMATIC IMAGES */}
+      {/* 2. WHAT WE DO PILLARS GRID */}
       <section className="max-w-7xl mx-auto px-6 py-24">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-[#0A1F16] mb-16 capitalize">
           What we do
@@ -69,7 +67,7 @@ export default function Hero() {
           {whatWeDo.map((item, index) => (
             <div 
               key={index} 
-              className="group relative bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-[380px]"
+              className="group relative bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-[430px]"
             >
               {/* Card Feature Image */}
               <div className="h-44 w-full overflow-hidden relative">
@@ -84,10 +82,10 @@ export default function Hero() {
               {/* Card Content Matrix */}
               <div className="p-6 flex-1 flex flex-col justify-between bg-white">
                 <div>
-                  <h3 className="text-xl font-bold text-[#0A1F16] mb-3">
+                  <h3 className="text-xl font-bold text-[#0A1F16] mb-3 leading-tight min-h-[56px] flex items-center">
                     {item.title}
                   </h3>
-                  <p className="text-stone-600 text-sm md:text-base leading-relaxed font-normal">
+                  <p className="text-stone-600 text-xs sm:text-sm leading-relaxed font-normal">
                     {item.description}
                   </p>
                 </div>

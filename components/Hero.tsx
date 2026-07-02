@@ -34,19 +34,18 @@ export default function Hero() {
   return (
     <div className="bg-[#FAF9F5] text-[#0A1F16] min-h-screen font-sans">
       
-      {/* 1. CINEMATIC HALF-HEIGHT BANNER WITH HIGH-DEFINITION AGRICULTURAL LANDSCAPE */}
-      <section className="relative h-[55vh] min-h-[460px] w-full flex items-center justify-center overflow-hidden">
+      {/* 1. CINEMATIC BANNER - Added mobile padding safety net (pt-32) */}
+      <section className="relative min-h-[55vh] pt-32 pb-16 md:py-0 w-full flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-100"
           style={{ 
             backgroundImage: `url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=2560&q=95')` 
           }} 
         />
-        {/* Dark protective overlay to ensure high contrast for the text */}
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[0.5px]" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center flex flex-col items-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.2] mb-10 max-w-5xl">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.2] mb-10 max-w-5xl">
             Building trusted agricultural commodity supply chains through verification, data, technology, and collective action.
           </h1>
           <a
@@ -70,7 +69,6 @@ export default function Hero() {
               key={index} 
               className="group relative bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-[380px]"
             >
-              {/* Card Feature Image remains perfectly locked in */}
               <div className="h-44 w-full overflow-hidden relative">
                 <img 
                   src={item.image} 
@@ -80,7 +78,6 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
               
-              {/* Card Content Matrix */}
               <div className="p-6 flex-1 flex flex-col justify-between bg-white">
                 <div>
                   <h3 className="text-xl font-bold text-[#0A1F16] mb-3">

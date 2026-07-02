@@ -37,6 +37,9 @@ export default function AboutPage() {
     { metric: '10x', label: 'More efficient data scaling achieved when community-led spatial literacy models are actively deployed.' }
   ];
 
+  // Configured your global Google Form Link for easy code maintenance
+  const googleFormUrl = "https://forms.gle/FyQLRnY3ehNpYYvf6";
+
   return (
     <div className="bg-[#FAF9F5] text-[#0A1F16] min-h-screen font-sans flex flex-col justify-between">
       
@@ -197,7 +200,9 @@ export default function AboutPage() {
             </p>
             <div className="pt-4">
               <a
-                href="#contact"
+                href={googleFormUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block px-10 py-4 bg-[#2B5C43] hover:bg-[#1E402B] text-white text-base font-semibold rounded-full transition-all duration-200 shadow-lg"
               >
                 Get in Touch
@@ -238,7 +243,16 @@ export default function AboutPage() {
             <div>
               <h4 className="text-sm font-bold uppercase tracking-widest text-[#C29B74] mb-4">Connect</h4>
               <ul className="space-y-3 text-base text-stone-400">
-                <li><a href="#contact" className="hover:text-white transition-colors">Contact Us</a></li>
+                <li>
+                  <a 
+                    href={googleFormUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    Contact Us
+                  </a>
+                </li>
                 <li>
                   <a 
                     href="https://www.linkedin.com/company/106148574/" 

@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const googleFormUrl = "https://forms.gle/FyQLRnY3ehNpYYvf6";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#030D0A] border-b border-white/10">
@@ -32,12 +33,15 @@ export default function Navbar() {
 
         {/* Right Action Block */}
         <div className="flex items-center gap-4">
-          <Link 
-            href="/partner" 
-            className="hidden sm:inline-block px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-mono uppercase tracking-wider rounded transition-colors"
+          {/* Desktop "Get in Touch" Button linking to Google Forms */}
+          <a 
+            href={googleFormUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-block px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-mono uppercase tracking-wider rounded transition-colors text-center"
           >
-            Partner
-          </Link>
+            Get in Touch
+          </a>
 
           {/* Interactive Mobile Menu Toggle Button */}
           <button 
@@ -80,13 +84,16 @@ export default function Navbar() {
           >
             Insights
           </Link>
-          <Link 
-            href="/partner" 
+          {/* Mobile "Get in Touch" Button linking to Google Forms */}
+          <a 
+            href={googleFormUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
-            className="text-center px-4 py-3 bg-emerald-600 text-white text-xs font-mono uppercase tracking-wider rounded w-full block mt-4"
+            className="text-center px-4 py-3 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-mono uppercase tracking-wider rounded w-full block mt-4 transition-colors"
           >
-            Partner With Us
-          </Link>
+            Get in Touch
+          </a>
         </div>
       )}
     </header>

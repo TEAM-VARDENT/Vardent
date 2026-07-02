@@ -1,4 +1,4 @@
-import './globals.css';
+import '@/app/globals.css';
 import Navbar from '@/components/Navbar';
 
 export default function RootLayout({
@@ -9,7 +9,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        {/* Injects the global institutional nav header */}
         <Navbar />
         {children}
       </body>

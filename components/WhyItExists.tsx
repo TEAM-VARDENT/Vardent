@@ -1,45 +1,57 @@
-import Eyebrow from './ui/Eyebrow';
+'use client';
+
 import { site } from '@/content/site';
 
-const { why } = site;
+interface ValuePillar {
+  title: string;
+  desc: string;
+}
 
 export default function WhyItExists() {
-  return (
-    <section id="why" className="section-pad bg-white">
-      {/* Header */}
-      <div className="text-center mb-[72px]">
-        <div className="reveal">
-          <Eyebrow center>{why.eyebrow}</Eyebrow>
-        </div>
-        <h2
-          className="reveal font-display font-bold leading-[1.1] tracking-[-0.025em] text-vardent-ink mx-auto mb-5"
-          style={{ fontSize: 'clamp(40px, 5vw, 58px)' }}
-        >
-          {why.headlineLine1}
-          <br />
-          <span className="text-vardent-g3">{why.headlineLine2}</span>
-        </h2>
-        <p className="reveal font-body text-[20px] leading-[1.7] text-vardent-ink3 mx-auto text-center max-w-[580px]">
-          {why.lead}
-        </p>
-      </div>
+  // Safe defensive layout fallback mapping your structure requirements
+  const whyData = (site as any).why || {
+    title: "Why Vardent Exists",
+    subtitle: "Bridging the gap between ecological intent and verifiable commercial impact.",
+    pillars: [
+      {
+        title: "The Greenwashing Crisis",
+        desc: "Consumers and regulatory frameworks are rejecting unbacked claims. Trust requires visible, data-driven tracking architecture."
+      },
+      {
+        title: "Automated Evidence",
+        desc: "We clear administrative logjams by converting standard supply ledger activities into auditable digital credentials instantly."
+      }
+    ]
+  };
 
-      {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {why.cards.map((card) => (
-          <div
-            key={card.number}
-            className="reveal ycard-accent relative bg-vardent-bg border border-[rgba(15,94,61,0.10)] rounded-[28px] px-8 py-10 overflow-hidden transition-all duration-[250ms] hover:-translate-y-[5px] hover:shadow-vardent-lg hover:bg-white"
-          >
-            <div className="font-mono text-[11px] text-vardent-g3 tracking-[0.10em] mb-6 opacity-80">
-              {card.number}
+  const pillarsList = whyData.pillars || [];
+
+  return (
+    <section id="why" className="py-24 bg-vardent-bg/20 border-t border-b border-[rgba(15,94,61,0.06)]">
+      <div className="max-w-5xl mx-auto px-6">
+        
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-vardent-ink tracking-tight mb-4">
+            {whyData.title}
+          </h2>
+          <p className="font-body text-base text-vardent-ink3 leading-relaxed">
+            {whyData.subtitle}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {pillarsList.map((pillar: ValuePillar, idx: number) => (
+            <div key={idx} className="bg-white border border-[rgba(15,94,61,0.08)] rounded-2xl p-8 shadow-vardent-xs">
+              <h3 className="font-display text-xl font-bold text-vardent-ink mb-3">
+                {pillar.title}
+              </h3>
+              <p className="font-body text-[15px] text-vardent-ink3 leading-relaxed">
+                {pillar.desc}
+              </p>
             </div>
-            <h3 className="font-display text-[20px] font-bold text-vardent-ink mb-[14px] leading-[1.3]">
-              {card.title}
-            </h3>
-            <p className="font-body text-[17px] text-vardent-ink3 leading-[1.75]">{card.body}</p>
-          </div>
-        ))}
+          ))}
+        </div>
+
       </div>
     </section>
   );

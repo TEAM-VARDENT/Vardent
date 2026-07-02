@@ -88,7 +88,6 @@ export default function Hero() {
               key={index} 
               className="group relative bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col min-h-[460px] lg:h-[480px]"
             >
-              {/* Card Feature Image */}
               <div className="h-44 w-full overflow-hidden relative">
                 <img 
                   src={item.image} 
@@ -98,7 +97,6 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
               
-              {/* Card Content Matrix */}
               <div className="p-6 flex-1 flex flex-col justify-between bg-white">
                 <div>
                   <h3 className="text-xl font-bold text-[#0A1F16] mb-3 leading-tight min-h-[56px] flex items-center">
@@ -134,6 +132,38 @@ export default function Hero() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* 5. WORKING TOGETHER & TRUSTED LOGO MARQUEE */}
+      <section className="max-w-7xl mx-auto px-6 py-24 border-t border-stone-200">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+          
+          <div>
+            <h2 className="text-3xl font-black tracking-tight text-[#0A1F16] mb-4">
+              Working together
+            </h2>
+            <p className="text-stone-600 text-base md:text-lg font-normal leading-relaxed">
+              We believe trusted agricultural systems are built through collaboration.
+            </p>
+          </div>
+
+          {/* Institutional Partner Placeholder Framework */}
+          <div className="lg:col-span-2 grid grid-cols-2 sm:grid-cols-4 gap-8 items-center opacity-40 grayscale contrast-200">
+            <div className="h-12 border border-dashed border-stone-400 rounded-lg flex items-center justify-center text-xs font-mono tracking-widest text-stone-500 select-none">
+              PARTNER_01
+            </div>
+            <div className="h-12 border border-dashed border-stone-400 rounded-lg flex items-center justify-center text-xs font-mono tracking-widest text-stone-500 select-none">
+              PARTNER_02
+            </div>
+            <div className="h-12 border border-dashed border-stone-400 rounded-lg flex items-center justify-center text-xs font-mono tracking-widest text-stone-500 select-none">
+              PARTNER_03
+            </div>
+            <div className="h-12 border border-dashed border-stone-400 rounded-lg flex items-center justify-center text-xs font-mono tracking-widest text-stone-500 select-none">
+              PARTNER_04
+            </div>
+          </div>
+
         </div>
       </section>
 

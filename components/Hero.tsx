@@ -34,16 +34,16 @@ export default function Hero() {
   return (
     <div className="bg-[#FAF9F5] text-[#0A1F16] min-h-screen font-sans">
       
-      {/* 1. CINEMATIC HALF-HEIGHT BANNER */}
+      {/* 1. CINEMATIC HALF-HEIGHT BANNER WITH HIGH-DEFINITION AGRICULTURAL LANDSCAPE */}
       <section className="relative h-[55vh] min-h-[460px] w-full flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-100"
           style={{ 
-            backgroundImage: `url('https://images.unsplash.com/photo-1625246333195-78d9c38ad451?auto=format&fit=crop&w=2560&q=95')` 
+            backgroundImage: `url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=2560&q=95')` 
           }} 
         />
-        {/* Soft, professional atmospheric overlay layer */}
-        <div className="absolute inset-0 bg-black/45 backdrop-blur-[0.5px]" />
+        {/* Dark protective overlay to ensure high contrast for the text */}
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-[0.5px]" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center flex flex-col items-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.2] mb-10 max-w-5xl">
@@ -58,7 +58,7 @@ export default function Hero() {
         </div>
       </section>
 
-      {/* 2. ENHANCED WHAT WE DO BLOCK WITH IMAGES */}
+      {/* 2. WHAT WE DO BLOCK WITH PRESERVED CARD IMAGES */}
       <section className="max-w-7xl mx-auto px-6 py-24">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-[#0A1F16] mb-16">
           Building the foundation for trusted agriculture
@@ -70,7 +70,7 @@ export default function Hero() {
               key={index} 
               className="group relative bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-[380px]"
             >
-              {/* Card Feature Image */}
+              {/* Card Feature Image remains perfectly locked in */}
               <div className="h-44 w-full overflow-hidden relative">
                 <img 
                   src={item.image} 

@@ -41,12 +41,12 @@ export default function AboutPage() {
     <div className="bg-[#FAF9F5] text-[#0A1F16] min-h-screen font-sans flex flex-col justify-between">
       
       <main className="flex-grow">
-        {/* 1. HERO BANNER WITH BEAUTIFUL COCOA/AGRICULTURE BACKGROUND */}
+        {/* 1. HERO BANNER WITH REFRESHED AGRICULTURAL TERRACE BACKGROUND */}
         <section className="relative min-h-[55vh] pt-32 pb-16 md:py-0 w-full flex items-center justify-center overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ 
-              backgroundImage: "url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=2560&q=95')" 
+              backgroundImage: "url('https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcS54U9MY3yFNOXeRxD7_aVhneF9BzjY_Gr_JHAlOxEahDvWoxtvPZ0rWTogF3VGH2VaRF8r4BhJHFHbUpw')" 
             }} 
           />
           <div className="absolute inset-0 bg-black/60 backdrop-blur-[0.5px]" />
@@ -77,7 +77,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 3. OUR KEY SECTORS WITH IMAGES & LARGER TEXT */}
+        {/* 3. OUR KEY SECTORS */}
         <section className="max-w-7xl mx-auto px-6 py-24 border-t border-stone-200">
           <h2 className="text-3xl md:text-4xl font-black tracking-tight text-[#0A1F16] mb-16">
             Our Key Sectors
@@ -129,7 +129,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 5. GLOBE DATA METRICS GRID */}
+        {/* 5. GLOBE DATA METRICS GRID - REAL GIS FARM MAP IMAGE ADDED */}
         <section className="max-w-7xl mx-auto px-6 py-24">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             <div>
@@ -139,9 +139,18 @@ export default function AboutPage() {
               <p className="text-stone-600 text-base md:text-lg leading-relaxed font-normal mb-6">
                 Our work target addresses systemic informational data problems on a macro global scale. Without clear data metrics, supply risks compound daily.
               </p>
-              <div className="h-44 rounded-xl bg-[#2B5C43]/5 border border-[#2B5C43]/10 flex flex-col items-center justify-center text-center p-4">
-                <span className="text-3xl mb-2">🌍</span>
-                <span className="text-xs font-mono tracking-widest text-[#2B5C43] uppercase font-bold">Vardent Telemetry Mapping Active</span>
+              <div className="relative h-48 w-full rounded-2xl overflow-hidden border border-stone-200 shadow-inner bg-stone-100 group">
+                <img 
+                  src="https://satpalda.com/wp-content/uploads/elementor/thumbs/farm-satellite-imagery-red1m47yxl0r8yjbsjoxm4rzq7r936qgj30x298x5q.png" 
+                  alt="Vardent GIS Farm Satellite Mapping Dashboard" 
+                  className="w-full h-full object-cover brightness-90 contrast-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+                <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between">
+                  <span className="text-[10px] font-mono tracking-widest text-white uppercase font-bold bg-[#2B5C43] px-2 py-1 rounded">
+                    Telemetry Active
+                  </span>
+                </div>
               </div>
             </div>
             

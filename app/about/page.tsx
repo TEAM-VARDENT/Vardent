@@ -5,11 +5,13 @@ export default function AboutPage() {
     { 
       title: 'Smallholder Farmers', 
       desc: 'Optimizing value chains, ensuring fair producer inclusion, and mapping structural asset models across African farming networks.',
+      // Restored your original cocoa farmer image
       image: 'https://images.unsplash.com/photo-1594756202469-9ff9799b2e4e?auto=format&fit=crop&w=600&q=80'
     },
     { 
       title: 'Global Commodity Markets', 
       desc: 'Bringing enterprise-grade traceability, climate compliance data, and verification infrastructure to global buyers.',
+      // Kept the clean, unwatermarked macro grid commodity image
       image: 'https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&w=600&q=80'
     },
     { 
@@ -77,7 +79,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 3. OUR KEY SECTORS WITH UPDATED CLEAN ASSET IMAGES */}
+        {/* 3. OUR KEY SECTORS WITH RESTORED COCOA FARMER ASSET */}
         <section className="max-w-7xl mx-auto px-6 py-24 border-t border-stone-200">
           <h2 className="text-3xl md:text-4xl font-black tracking-tight text-[#0A1F16] mb-16">
             Our Key Sectors

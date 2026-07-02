@@ -2,17 +2,26 @@
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-[#071912] overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center bg-[#05130e] overflow-hidden pt-20">
       
-      {/* Premium Ambient Grid & Animated Layers */}
+      {/* High-End Geospatial Infrastructure Background Asset */}
+      <div 
+        className="absolute inset-0 opacity-15 pointer-events-none bg-cover bg-center mix-blend-screen"
+        style={{ 
+          backgroundImage: `url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1920&q=80')` 
+        }} 
+      />
+
+      {/* Premium Ambient Grid overlay */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b981_1px,transparent_1px),linear-gradient(to_bottom,#10b981_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b981_1px,transparent_1px),linear-gradient(to_bottom,#10b981_1px,transparent_1px)] bg-[size:5rem_5rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
       </div>
 
-      {/* Subtle Data-Point Animations (Simulating geospatial layers) */}
+      {/* Subtle Data-Point Animations (Simulating live network node activity) */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-1/3 left-1/4 w-2 h-2 bg-emerald-400 rounded-full animate-ping [animation-duration:3s]" />
         <div className="absolute top-2/3 right-1/3 w-2 h-2 bg-emerald-500 rounded-full animate-ping [animation-duration:4s]" />
+        <div className="absolute top-1/2 left-2/3 w-1.5 h-1.5 bg-teal-400 rounded-full opacity-60 animate-pulse" />
       </div>
 
       {/* Main Content Area */}
@@ -38,7 +47,7 @@ export default function Hero() {
         {/* Clean Editorial Subtext */}
         <p className="font-body text-emerald-100/70 text-lg sm:text-xl max-w-3xl leading-relaxed mb-12">
           VARDENT bridges macro ecological requirements with micro supply network clarity, 
-          deploying real-time tracking architecture onto international market pipelines.
+          deploying real-time cryptographic tracking architecture onto international market pipelines.
         </p>
 
         {/* Premium Action Gateways */}

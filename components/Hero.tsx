@@ -67,7 +67,7 @@ export default function Hero() {
           {whatWeDo.map((item, index) => (
             <div 
               key={index} 
-              className="group relative bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-[430px]"
+              className="group relative bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col min-h-[460px] lg:h-[480px]"
             >
               {/* Card Feature Image */}
               <div className="h-44 w-full overflow-hidden relative">
@@ -85,7 +85,8 @@ export default function Hero() {
                   <h3 className="text-xl font-bold text-[#0A1F16] mb-3 leading-tight min-h-[56px] flex items-center">
                     {item.title}
                   </h3>
-                  <p className="text-stone-600 text-xs sm:text-sm leading-relaxed font-normal">
+                  {/* Scaled description copy from text-xs to crisp text-sm/text-base */}
+                  <p className="text-stone-700 text-sm md:text-base leading-relaxed font-normal">
                     {item.description}
                   </p>
                 </div>

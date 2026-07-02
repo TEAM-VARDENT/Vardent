@@ -6,17 +6,14 @@ export default function Hero() {
       
       {/* 1. IMMERSIVE BACKGROUND: Full-Width Geospatial Overlay Canvas */}
       <div className="absolute inset-0 z-0">
-        {/* Deep, rich base image blending landscape + human tech elements */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25 mix-blend-luminosity transform scale-105"
           style={{ 
             backgroundImage: `url('https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1920&q=80')` 
           }} 
         />
-        {/* Dark McKinsey forest gradient mapping */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#05140E]/90 via-[#05140E]/80 to-[#05140E]" />
         
-        {/* Animated Network Data Infrastructure Lines */}
         <div className="absolute inset-0 opacity-15 pointer-events-none">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b981_1px,transparent_1px),linear-gradient(to_bottom,#10b981_1px,transparent_1px)] bg-[size:6rem_6rem]" />
           <div className="absolute top-1/4 left-1/3 w-2 h-2 bg-emerald-400 rounded-full animate-ping [animation-duration:4s]" />
@@ -24,17 +21,16 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* 2. THE OVERLAY MASTER HEADING (Centered Top Core Impact) */}
+      {/* 2. THE OVERLAY MASTER HEADING */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-32 text-center flex-1 flex flex-col justify-center items-center">
         
-        {/* High-End Global Quote Badge */}
+        {/* ESCAPED QUOTES HERE FOR THE LINTER */}
         <div className="inline-block px-4 py-2 bg-white/[0.03] border border-white/10 rounded-full mb-8 backdrop-blur-md">
           <span className="text-xs font-mono font-medium uppercase tracking-widest text-[#C29B74]">
-            "From Farm to Market, Trust Must Travel With the Product"
+            &ldquo;From Farm to Market, Trust Must Travel With the Product&rdquo;
           </span>
         </div>
 
-        {/* Premium Font Combination Heading */}
         <h1 className="font-sans font-extrabold text-4xl sm:text-5xl md:text-6xl tracking-tight text-white max-w-5xl leading-[1.12] mb-6">
           Building trusted agricultural commodity supply chains through{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-blue-300">
@@ -48,11 +44,10 @@ export default function Hero() {
         </p>
       </div>
 
-      {/* 3. FIXED BOTTOM BALANCED SPLIT (Left: Cooperative View | Right: Traceability Data) */}
+      {/* 3. FIXED BOTTOM BALANCED SPLIT */}
       <div className="relative z-10 w-full border-t border-white/10 bg-[#040F0B]/90 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 items-stretch">
           
-          {/* LEFT: Image of Farmers/Cooperative Panel */}
           <div className="md:col-span-5 relative min-h-[220px] overflow-hidden group border-b md:border-b-0 md:border-r border-white/10">
             <div 
               className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
@@ -67,7 +62,6 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* RIGHT: Text About Producer Visibility, Traceability, Data */}
           <div className="md:col-span-7 p-8 sm:p-12 flex flex-col justify-center">
             <div className="max-w-xl">
               <div className="inline-flex items-center gap-2 mb-4">

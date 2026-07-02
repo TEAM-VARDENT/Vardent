@@ -126,7 +126,7 @@ export default function Hero() {
                 <div>
                   <h4 className="text-lg sm:text-xl font-bold text-[#0A1F16] mb-2">
                     {principle.title}
-                </h4>
+                  </h4>
                   <p className="text-stone-600 text-base md:text-lg font-normal leading-relaxed">
                     {principle.text}
                   </p>
@@ -140,43 +140,59 @@ export default function Hero() {
       {/* 5. PROFESSIONAL ENTERPRISE FOOTER */}
       <footer className="bg-[#0A1F16] text-[#FAF9F5] border-t border-[#1E402B] pt-16 pb-12">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
             
             {/* Brand / Mission Column */}
-            <div className="md:col-span-2 space-y-4">
-              <span className="text-xl font-black tracking-wider text-white">VARDENT</span>
-              <p className="text-stone-400 text-sm max-w-sm leading-relaxed">
+            <div className="sm:col-span-2 space-y-4">
+              <span className="text-2xl font-black tracking-wider text-white block">VARDENT</span>
+              <p className="text-stone-400 text-base max-w-sm leading-relaxed">
                 Building integrity, visibility, and shared value across global agricultural commodity markets through data and technology.
               </p>
             </div>
 
-            {/* Quick Navigation Links */}
+            {/* About & Mission Column */}
             <div>
-              <h4 className="text-xs font-bold uppercase tracking-widest text-[#C29B74] mb-4">Focus Areas</h4>
-              <ul className="space-y-2 text-sm text-stone-400">
-                <li><a href="#" className="hover:text-white transition-colors">Strategic Research</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Geospatial Systems</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Verification Analytics</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Capacity Building</a></li>
+              <h4 className="text-sm font-bold uppercase tracking-widest text-[#C29B74] mb-4">About Us</h4>
+              <ul className="space-y-3 text-base text-stone-400">
+                <li><a href="#" className="hover:text-white transition-colors">Our Mission & Vision</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Impact Portfolio</a></li>
               </ul>
             </div>
 
-            {/* Regulatory / Engagement Info */}
+            {/* Team & Careers Column */}
             <div>
-              <h4 className="text-xs font-bold uppercase tracking-widest text-[#C29B74] mb-4">Connect</h4>
-              <ul className="space-y-2 text-sm text-stone-400">
-                <li><a href="#contact" className="hover:text-white transition-colors">Contact Engagement</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Privacy Framework</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Terms of Use</a></li>
+              <h4 className="text-sm font-bold uppercase tracking-widest text-[#C29B74] mb-4">Careers</h4>
+              <ul className="space-y-3 text-base text-stone-400">
+                <li><a href="#" className="hover:text-white transition-colors">Our Team</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Join our Team</a></li>
+              </ul>
+            </div>
+
+            {/* Engagement & Social Column */}
+            <div>
+              <h4 className="text-sm font-bold uppercase tracking-widest text-[#C29B74] mb-4">Connect</h4>
+              <ul className="space-y-3 text-base text-stone-400">
+                <li><a href="#contact" className="hover:text-white transition-colors">Contact Us</a></li>
+                <li>
+                  <a 
+                    href="https://www.linkedin.com/company/106148574/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="hover:text-white transition-colors inline-flex items-center gap-2"
+                  >
+                    LinkedIn
+                    <span className="text-xs text-[#C29B74]">↗</span>
+                  </a>
+                </li>
               </ul>
             </div>
 
           </div>
 
           {/* Copyright and Baseline Stamp */}
-          <div className="pt-8 border-t border-[#1E402B] flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-500">
+          <div className="pt-8 border-t border-[#1E402B] flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-stone-500">
             <p>© {new Date().getFullYear()} Vardent. All rights reserved.</p>
-            <p className="tracking-wider">THE VARDENT WAY</p>
+            <p className="tracking-wider text-xs">THE VARDENT WAY</p>
           </div>
         </div>
       </footer>

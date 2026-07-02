@@ -46,7 +46,7 @@ export default function AboutPage() {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-100"
             style={{ 
-              backgroundImage: `url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=2560&q=95')` 
+              backgroundImage: "url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=2560&q=95')" 
             }} 
           />
           <div className="absolute inset-0 bg-black/50 backdrop-blur-[0.5px]" />
@@ -205,4 +205,55 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
             
             <div className="sm:col-span-2 space-y-4">
-              <span className="text
+              <span className="text-2xl font-black tracking-wider text-white block">VARDENT</span>
+              <p className="text-stone-400 text-base max-w-sm leading-relaxed">
+                Building integrity, visibility, and shared value across global agricultural commodity markets through data and technology.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-bold uppercase tracking-widest text-[#C29B74] mb-4">About Us</h4>
+              <ul className="space-y-3 text-base text-stone-400">
+                <li><a href="#" className="hover:text-white transition-colors">Our Mission & Vision</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Impact Portfolio</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-bold uppercase tracking-widest text-[#C29B74] mb-4">Careers</h4>
+              <ul className="space-y-3 text-base text-stone-400">
+                <li><a href="#" className="hover:text-white transition-colors">Our Team</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Join our Team</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-bold uppercase tracking-widest text-[#C29B74] mb-4">Connect</h4>
+              <ul className="space-y-3 text-base text-stone-400">
+                <li><a href="#contact" className="hover:text-white transition-colors">Contact Us</a></li>
+                <li>
+                  <a 
+                    href="https://www.linkedin.com/company/106148574/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="hover:text-white transition-colors inline-flex items-center gap-2"
+                  >
+                    LinkedIn
+                    <span className="text-xs text-[#C29B74]">↗</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div className="pt-8 border-t border-[#1E402B] flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-stone-500">
+            <p>© {new Date().getFullYear()} Vardent. All rights reserved.</p>
+            <p className="tracking-wider text-xs">THE VARDENT WAY</p>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  );
+}

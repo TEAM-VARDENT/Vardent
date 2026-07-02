@@ -5,12 +5,12 @@ export default function AboutPage() {
     { 
       title: 'Smallholder Farmers', 
       desc: 'Optimizing value chains, ensuring fair producer inclusion, and mapping structural asset models across African farming networks.',
-      image: 'https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcT7X2ZSvRZVq5lqpUwdv8gS1IwDzG_Iguxj55Ww_YHDJtkKrj2PDFK066FEJkCxdHeosCbdSpJS14_8Z9w'
+      image: 'https://images.unsplash.com/photo-1594756202469-9ff9799b2e4e?auto=format&fit=crop&w=600&q=80'
     },
     { 
       title: 'Global Commodity Markets', 
       desc: 'Bringing enterprise-grade traceability, climate compliance data, and verification infrastructure to global buyers.',
-      image: 'https://www.quantifiedstrategies.com/wp-content/uploads/2024/10/Cocoa-Trading.jpg'
+      image: 'https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&w=600&q=80'
     },
     { 
       title: 'Geospatial Intelligence', 
@@ -77,7 +77,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 3. OUR KEY SECTORS WITH CONTEXTUALLY ACCURATE ASSET IMAGES */}
+        {/* 3. OUR KEY SECTORS WITH UPDATED CLEAN ASSET IMAGES */}
         <section className="max-w-7xl mx-auto px-6 py-24 border-t border-stone-200">
           <h2 className="text-3xl md:text-4xl font-black tracking-tight text-[#0A1F16] mb-16">
             Our Key Sectors
@@ -257,7 +257,7 @@ export default function AboutPage() {
 
           <div className="pt-8 border-t border-[#1E402B] flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-stone-500">
             <p>© {new Date().getFullYear()} Vardent. All rights reserved.</p>
-            <p className="tracking-wider text-xs">THE VARDENT WAY</p>
+            <p className="tracking-wider text-xs"> THE VARDENT WAY</p>
           </div>
         </div>
       </footer>

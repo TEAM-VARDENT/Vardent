@@ -5,14 +5,14 @@ export default function AboutPage() {
     { 
       title: 'Smallholder Farmers', 
       desc: 'Optimizing value chains, ensuring fair producer inclusion, and mapping structural asset models across African farming networks.',
-      // Restored your original cocoa farmer image
-      image: 'https://images.unsplash.com/photo-1594756202469-9ff9799b2e4e?auto=format&fit=crop&w=600&q=80'
+      // Updated to an excited cocoa farmer holding fresh pods
+      image: 'https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSA2sBSEfM3A_Hr6yHTwTF-BHF3pJ3yGSBeLGthFZHJ17rmwbstN3m0E4wJy-pVn-fah24VecGZogPkHWU'
     },
     { 
       title: 'Global Commodity Markets', 
       desc: 'Bringing enterprise-grade traceability, climate compliance data, and verification infrastructure to global buyers.',
-      // Kept the clean, unwatermarked macro grid commodity image
-      image: 'https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&w=600&q=80'
+      // Updated to international export crops (coffee, cocoa, grains)
+      image: 'https://cdn.shortpixel.ai/spai/q_glossy+w_903+to_webp+ret_img/www.solidaridadnetwork.org/wp-content/uploads/2021/01/Pickers_Colombia_Coffee_Solidaridad-2048x1365.jpg'
     },
     { 
       title: 'Geospatial Intelligence', 
@@ -79,7 +79,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 3. OUR KEY SECTORS WITH RESTORED COCOA FARMER ASSET */}
+        {/* 3. OUR KEY SECTORS */}
         <section className="max-w-7xl mx-auto px-6 py-24 border-t border-stone-200">
           <h2 className="text-3xl md:text-4xl font-black tracking-tight text-[#0A1F16] mb-16">
             Our Key Sectors

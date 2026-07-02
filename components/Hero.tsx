@@ -57,8 +57,27 @@ export default function Hero() {
         </div>
       </section>
 
-      {/* 2. WHAT WE DO PILLARS GRID */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
+      {/* 2. CONTEXTUAL TRUST & EVIDENCE INTRODUCTION BLOCK */}
+      <section className="max-w-4xl mx-auto px-6 pt-24 pb-12">
+        <div className="border-l-4 border-[#C29B74] pl-6 md:pl-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0A1F16] tracking-tight leading-tight mb-6">
+            Agricultural supply chains need trust built on evidence.
+          </h2>
+          <div className="space-y-4 text-stone-700 text-base md:text-lg leading-relaxed font-normal">
+            <p>
+              Agricultural commodity markets are becoming more complex. Buyers require greater transparency. 
+              Producers face increasing sustainability expectations. Governments are strengthening regulatory frameworks. 
+              Yet many supply chains still rely on fragmented information, disconnected systems, and inconsistent verification.
+            </p>
+            <p className="font-semibold text-[#0A1F16]">
+              Without trusted evidence, sustainable practices become difficult to measure, difficult to reward, and difficult to scale.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. WHAT WE DO PILLARS GRID */}
+      <section className="max-w-7xl mx-auto px-6 py-16">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-[#0A1F16] mb-16 capitalize">
           What we do
         </h2>
@@ -85,7 +104,6 @@ export default function Hero() {
                   <h3 className="text-xl font-bold text-[#0A1F16] mb-3 leading-tight min-h-[56px] flex items-center">
                     {item.title}
                   </h3>
-                  {/* Scaled description copy from text-xs to crisp text-sm/text-base */}
                   <p className="text-stone-700 text-sm md:text-base leading-relaxed font-normal">
                     {item.description}
                   </p>
@@ -96,7 +114,7 @@ export default function Hero() {
         </div>
       </section>
 
-      {/* 3. CORE STRATEGIC PRINCIPLES ARCHITECTURE */}
+      {/* 4. CORE STRATEGIC PRINCIPLES ARCHITECTURE */}
       <section className="max-w-7xl mx-auto px-6 py-24 border-t border-stone-200">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-[#0A1F16] mb-16">
           Our principles
